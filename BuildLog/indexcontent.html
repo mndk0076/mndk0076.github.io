@@ -93,10 +93,10 @@
 	<SECTION ID="PI_Setup">
 		<H3>Raspberry pi Set-up</H3>
 		<p>
-		<li>Sudo apt-get install zbar- tools (This is needed to scan a QR code)</li> <br>
-		<li>Sudo apt-get update (Run this command if above command didn’t install properly)</li> <br>
-		<li>ls /dev/video* (This command check which video input is your webcam is connected to)</li> <br>
-		<li>zbarcam /dev/video* (The * needs to be change to the video input of your webcam is connected to.) </li> <br>
+		<li>Sudo apt-get install zbar- tools (This is needed to scan a QR code)</li>
+		<li>Sudo apt-get update (Run this command if above command didn’t install properly)</li>
+		<li>ls /dev/video* (This command check which video input is your webcam is connected to)</li>
+		<li>zbarcam /dev/video* (The * needs to be change to the video input of your webcam is connected to.) </li>
 		</p>
 	</SECTION>
 	
@@ -109,12 +109,39 @@
 		<img src="mndk0076.github.io/BuildLogFiles/PCB.jpg" alt="systemdiagram" style="width:500px;height:700px;">	
 	</SECTION>
 	
+	<SECTION ID="Power_Up">
+		<H3>Power Up</H3>
+		<p>Once you follow the steps above you can now power up the project. After the raspberry pi is turned on, go to terminal
+			and run the command ./scanner.sh I will be providing a download link below for all the codes used for this project. 
+			Once you run the code, zbarcam will pop out in a new window where you can see the webcam input and you can start 
+			scanning QR codes. When a QR code gets scanned the LED from PCB will blink and the data from QR code will be saved 
+			in a file called “scan-reults.txt”.</p>	
+	</SECTION>
 	
-
+	<SECTION ID="Unit_Testing">
+		<H3>Unit Testing</H3>
+		<p>First we checked if the LED in the PCB works by running sudo ./traffic2B command in the raspberry pi terminal. The 
+			traffic2B was provided by Humber College. Next we checked if the webcam is compatible with the raspberry pi by
+			installing FSWEBCAM. To install FSWEBCAM type sudo apt-get install fswebcam and upon installing type fswebcam 
+			image.jpg to run the webcam. If the webcam works it will take a picture and it will get save.</p>	
+	</SECTION>
 	
-
-
+	<SECTION ID="Product_Testing">
+		<H3>Product Testing</H3>
+		<p>To test the project, power up the raspberry pi and after the raspberry pi is turned on go to terminal and type 
+			“./scanner.sh” a download link below will be provided. After running the script place a QR code in front of the
+			webcam and when the QR code gets scanned successfully the LED from PCB will blink and the data will be saved to 
+			a file txt called “scan-results.txt”</p>	
+	</SECTION>
 	
-		
-		
+	<SECTION ID="Reproducibility">
+		<H3>Reproducibility</H3>
+		<p>My project can be replicate by following the instructions I provided above.</p>	
+	</SECTION>
+	
+	<SECTION ID="Downloads">
+		<H3>Downloads</H3>
+	</SECTION>
+	
+	
 </ARTICLE>
