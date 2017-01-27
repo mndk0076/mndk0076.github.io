@@ -205,7 +205,7 @@ Table of Contents
 
 [Approved Proposal](#approved-proposal)
 
-[Executive Summary](#executive-summary)
+**[Executive Summary](#executive-summary)**
 
 [Background](#background)
 
