@@ -205,15 +205,15 @@ Table of Contents
 
 [Approved Proposal](#approved-proposal)
 
-    [Executive Summary](#executive-summary)
+   [Executive Summary](#executive-summary)
 
-    [Background](#background)
+   [Background](#background)
 
-    [Methodology](#methodology)
+   [Methodology](#methodology)
 
-    [Concluding Remarks](#concluding-remarks)
+   [Concluding Remarks](#concluding-remarks)
 
-    [Illustration and Diagram](#illustration-and-diagram)]
+   [Illustration and Diagram](#illustration-and-diagram)]
 
 1.  [​[Introduction](#1-introduction)](#referencesREADME.m)
 
