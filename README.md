@@ -203,7 +203,7 @@ Illustration/Diagrams
 Table of Contents
 =================
 
-[Approved Proposal](#approved-proposal)](#proposal)
+[Approved Proposal](#approved-proposal)
 
     [Executive Summary](#executive-summary)
 
