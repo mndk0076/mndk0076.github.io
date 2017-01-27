@@ -215,7 +215,7 @@ Table of Contents
 
     [Illustration and Diagram](#illustration-and-diagram)
 
-1.  [​[Introduction](#1-introduction)](#referencesREADME.m)
+1.  [Introduction](#1-introduction)
 
 2.  [Software Requirements Specification](#2-software-requirements-specification)
 
