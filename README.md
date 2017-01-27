@@ -260,6 +260,13 @@ and Gurpreet will be in charge of the web page.
 2.2.3 Hardware
 --------------
 
+Our hardware will be a scanning device used to check-in to the prototype lab. 
+The database will be linked to our scanning device which will allow the student to 
+check-in by just scanning their student id. If the student arrives too early the system 
+will not allow the student to check-in until the time slot is available. If the student 
+does not register for a time slot through the application the device will not allow the 
+student to check-in and will request the student to register into the next available time slot.
+
 2.2.4 Application
 -----------------
 
