@@ -183,21 +183,21 @@ Table of Contents
 
 2.  [Software Requirements Specification](#2-software-requirements-specification)
 
-  -  [2.1 Product Introduction](#21-product-introduction)
+    + [2.1 Product Introduction](#21-product-introduction)
 
-       [2.1.1 Purpose](#211-purpose)
+       - [2.1.1 Purpose](#211-purpose)
 
-       [2.1.2 Product Overview](#212-product-overview)
+       - [2.1.2 Product Overview](#212-product-overview)
 
-   - [2.2 Overall Description](#22-overall-description)
+   + [2.2 Overall Description](#22-overall-description)
 
-       [2.2.1 Database](#221-database)
+     - [2.2.1 Database](#221-database)
 
-       [2.2.2 Web Interface](#222-web-interface)
+      - [2.2.2 Web Interface](#222-web-interface)
 
-       [2.2.3 Hardware](#223-hardware)
+     +  [2.2.3 Hardware](#223-hardware)
 
-       [2.2.4 Application](#224-application)
+      + [2.2.4 Application](#224-application)
 
 3.  [Conclusion](#3-conclusion)
 
