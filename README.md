@@ -203,7 +203,7 @@ Illustration/Diagrams
 Table of Contents
 =================
 
-    [Approved Proposal](#approved-proposal)](#proposal)
+[Approved Proposal](#approved-proposal)](#proposal)
 
     [Executive Summary](#executive-summary)
 
@@ -215,9 +215,9 @@ Table of Contents
 
     [Illustration and Diagram](#illustration-and-diagram)]
 
-1.  [​[Introduction](#introduction)](#referencesREADME.m)
+1.  [​[Introduction](#1-introduction)](#referencesREADME.m)
 
-2.  [Software Requirements Specification](#software-requirements-specification)
+2.  [Software Requirements Specification](#2-software-requirements-specification)
 
     [2.1 Product Introduction](#21-product-introduction)
 
