@@ -15,55 +15,20 @@ Approved Proposal
 
 *Proposal for the Prototype Lab Flow Project*
 
-Prepared by Kenneth Mendoza, Sukhdeep Sehra, Matthues Rondinelli and Gurpreet
-Jitha  
+Prepared by Kenneth Mendoza, Sukhdeep Sehra, Matheus Rondinelli and Gurpreet
+Jhita  
 *Computer Engineering Technology Student*  
 <https://mndk0076.github.io/>
 
 Executive Summary
 -----------------
 
-As a student in the Computer Engineering Technology program, I will be
-integrating the knowledge and skills I have learned from our program into this
-Internet of Things themed capstone project. This proposal requests the approval
-to build the hardware portion that will connect to a database as well as to a
-mobile device application. The Internet connected hardware will include a custom
-PCB with sensors and actuators for LCD monitor and a scanner. The database will
-store all of the items from the parts crib for availability of the parts, and
-all of the users and admins info from the mobile app. The mobile device
-functionality will include a mobile app for users to request items, a LCD
-monitor that display the users requested items, a scanner to scan the user
-mobile app when returning the items, a mobile app for the users to send request
-items and will be further detailed in the mobile application proposal. I will be
-collaborating with Humber College Technology Department. In the winter semester
-I plan to form a group with the following students; Sukhdeep Sehra and Mathues
-Rondinelli, who are also building similar hardware this term and working on the
-mobile application with me. The hardware will be completed in CENG 317 Hardware
-Production Techniques independently and the application will be completed in
-CENG 319 Software Project. These will be integrated together in the subsequent
-term in CENG 355 Computer Systems Project as a member of a 2 or 3 student group.
+As a student in the Computer Engineering Technology program, we will be integrating the knowledge and skills we have learned from our program into this Internet of Things themed capstone project. This proposal requests the approval to build the hardware portion that will connect to a database as well as to a mobile device application. The Internet connected hardware will include a custom PCB with sensors and actuators for LCD monitor and a scanner. The database will store all of the items from the parts crib for availability of the parts, and all of the users and admins info from the mobile app. The mobile device functionality will include a mobile app for users to request items, a LCD monitor that display the users requested items, a scanner to scan the user mobile app when returning the items, a mobile app for the users to send request items and will be further detailed in the mobile application proposal. We will be collaborating with Humber College Technology Department. In the winter semester we plan to form a group with the following students; Kenneth Mendoza, Sukhdeep Sehra, Matheus Rondinelli and Gurpreet Jhita, who are also building similar hardware this term and working on the mobile application. The hardware will be completed in CENG 317 Hardware Production Techniques independently and the application will be completed in CENG 319 Software Project. These will be integrated together in the subsequent term in CENG 355 Computer Systems Project.
 
 Background
 ----------
 
-The problem solved by this project is to make the parts crib more organized and
-operate smoother than ever before.  As of now we know the parts crib function;
-student line up to write the items they may need and give their student ID with
-the requested items then the worker from the crib get the requested items one by
-one. This functionality takes up time, waste paper and pen. Students sometimes
-wait for awhile in the line and find out there’s no more parts available. Our
-project will enhance the parts crib functionality by making a mobile app that a
-student can send request items from their phone while still in classroom or
-before their lab starts and that request will be send to the parts crib LCD
-monitor that the worker can see and start preparing the items for the student.
-The worker will then send a notification to the student that his/her requested
-parts are ready to be pick up. After the student used the parts he/she returns
-the items in the crib, the worker will scan the student mobile app to see what
-items the student borrow. This project will eliminate student lining up, giving
-out their student ID, using paper and pen to request an item and student will
-know if the parts are still available and when it’s ready to be pick up.
-Overall, the parts crib will save time and money and it’s going to be more
-convenient with everyone.
+Currently, we students have no way of booking time slots or requesting items from the prototype lab through a convenient application. Students have to go personally to the prototype lab and book the time or hope the item required is available. As a team, we feel like this is an inconvenient experience for the students and feel like an automated system would help to improve the current system by making it more efficient and more appealing to the student. Students would be able to book times slots and request items through the application and they would also be able to cancel requested time slots or items, freeing the space or item for another student and without having to go through the lab personally. That would also improve the time management of the staff, since they will not have to manage the times by themselves while having to work and help other students present in the prototype lab.
 
 I have searched for prior art via Humber’s IEEE subscription selecting “My
 Subscribed Content”[1] and have found and read [2] which provides insight into
