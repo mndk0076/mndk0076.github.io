@@ -180,14 +180,18 @@ Table of Contents
 [Illustration and Diagram](#illustration-and-diagram)
 
 1.  [Introduction](#1-introduction)
+    
 
 2.  [Software Requirements Specification](#2-software-requirements-specification)
 
     + [2.1 Product Introduction](#21-product-introduction)
 
        - [2.1.1 Purpose](#211-purpose)
+       
+       - [2.1.2 Scope](#212-scope)
 
-       - [2.1.2 Product Overview](#212-product-overview)
+       - [2.1.3 Product Overview](#213-product-overview)
+       
 
    + [2.2 Overall Description](#22-overall-description)
 
@@ -210,6 +214,8 @@ Table of Contents
 1. Introduction
 ---------------
 
+
+
 2. Software Requirements Specification
 --------------------------------------
 
@@ -218,8 +224,13 @@ Table of Contents
 
 2.1.1 Purpose
 -------------
+Our main goal with our project is to bring the system of requesting time slots and items from the prototype lab in par with our program and other systems in the school. Up to now students have no control on whether there are spots or items available in the prototype lab, and the lab administrators have no way of booking time slots and sometimes have to deal with high traffic of students without any real control. We feel like the system is outdated and needed to be automated. Therefore we are developing the Prototype lab flow, which is an app that aims to automate the system, making students able to book time slots through their mobile devices and allowing the lab administrators to have more control, time efficiency and organization on the prototype lab.
 
-2.1.2 Product Overview
+2.1.2 Scope
+-----------
+Our prototype lab flow project will create a mobile application where students will be able to create their accounts, check availability of items and time slots in the prototype lab and request them. The user’s info will be store in our database, as will all the time slots and items requested from students. Admins will have a special account where they will be able to check the booked times and manage them if necessary. They will also have additional information presented in charts and graphs showing them what days and times most of the time slots are getting booked and which items are getting requested the most.
+
+2.1.3 Product Overview
 ----------------------
 
 2.2 Overall Description
