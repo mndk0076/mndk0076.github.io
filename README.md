@@ -221,34 +221,25 @@ Table of Contents
 
      
 
-1. Introduction
----------------
+# 1. Introduction
 
 
+# 2. Software Requirements Specification
 
-2. Software Requirements Specification
---------------------------------------
 
-2.1 Product Introduction
-------------------------
+## 2.1 Product Introduction
 
-2.1.1 Purpose
--------------
+### 2.1.1 Purpose
 Our main goal with our project is to bring the system of requesting time slots and items from the prototype lab in par with our program and other systems in the school. Up to now students have no control on whether there are spots or items available in the prototype lab, and the lab administrators have no way of booking time slots and sometimes have to deal with high traffic of students without any real control. We feel like the system is outdated and needed to be automated. Therefore we are developing the Prototype lab flow, which is an app that aims to automate the system, making students able to book time slots through their mobile devices and allowing the lab administrators to have more control, time efficiency and organization on the prototype lab.
 
-2.1.2 Scope
------------
+### 2.1.2 Scope
 Our prototype lab flow project will create a mobile application where students will be able to create their accounts, check availability of items and time slots in the prototype lab and request them. The user’s info will be store in our database, as will all the time slots and items requested from students. Admins will have a special account where they will be able to check the booked times and manage them if necessary. They will also have additional information presented in charts and graphs showing them what days and times most of the time slots are getting booked and which items are getting requested the most.
 
-2.1.3 Product Overview
-----------------------
+### 2.1.3 Product Overview
 
-2.2 Overall Description
------------------------
+## 2.2 Overall Description
 
-2.2.1 Database
---------------
-
+### 2.2.1 Database
 Our main goal with the database is to make it store the user’s information,
 mainly user’s student number so that it can be assigned to the corresponding
 item or time. It will also have all items available in the prototype lab, such
@@ -266,9 +257,7 @@ a day or a certain amount of time to that specific group. We will be using MySQL
 to create the database and hostinger, which is a free hosting website. Kenneth
 will be in charge of the database.
 
-2.2.2 Web Interface
--------------------
-
+### 2.2.2 Web Interface
 Our web application is going to allow the student to register and/or log in to
 his account. The application will allow students to book a time through the web
 page and also check history of items or booked time slots in the past. The admin
@@ -278,9 +267,7 @@ with the application. The more progress we can achieve on it the more time we
 will have to develop the website and add more functionalities to it. Sukhdeep
 and Gurpreet will be in charge of the web page.
 
-2.2.3 Hardware
---------------
-
+### 2.2.3 Hardware
 Our hardware will be a scanning device used to check-in to the prototype lab. 
 The database will be linked to our scanning device which will allow the student to 
 check-in by just scanning their student id. If the student arrives too early the system 
@@ -288,9 +275,7 @@ will not allow the student to check-in until the time slot is available. If the 
 does not register for a time slot through the application the device will not allow the 
 student to check-in and will request the student to register into the next available time slot.
 
-2.2.4 Application
------------------
-
+### 2.2.4 Application
 Our application will allow the user to register and by doing so adding himself
 to our database. Once registered, the student will be able to access the other
 classes and request time slots and items from the prototype lab. He will also be
@@ -311,35 +296,8 @@ will have access to the database, since it needs its information to display it
 back to the user and it will support English and French. Matheus and Kenneth
 will be in charge of the application.
 
-3. Conclusion
--------------
+# 3. Conclusion
 
-4. Recommendations
-------------------
+# 4. Recommendations
 
-5. Bibliography
----------------
-
- 
-
- 
-
- 
-
- 
-
- 
--
-
- 
--
-
- 
-
- 
-
- 
-
- 
-
- 
+# 5. Bibliography
