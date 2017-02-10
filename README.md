@@ -1,6 +1,6 @@
 ---
-csl: CENG 355/apa.csl
-bibliography: CENG 355/PLFCitations.bib
+csl: apa.csl
+bibliography: PLFCitations.bib
 ---
 
  
@@ -45,13 +45,13 @@ Subscribed Content”[1] and have found and read [2] which provides insight into
 similar efforts.
 
 The first article discusses how Gabor used QR decomposition for image encoding.
-[\@250340]
+[@250340]
 
 The second article discusses how support system for QR codes based educational
-processes. [\@7036011]
+processes. [@7036011]
 
 The third article discusses how VLSI implementation of hybrid QR code generation
-system. [\@6892829]
+system. [@6892829]
 
 In the Computer Engineering Technology program we have learned about the
 following topics from the respective relevant courses:
