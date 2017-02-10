@@ -5,7 +5,7 @@ bibliography: PLFCitations.bib
 
  
 
-Prototype Lab Flow Project
+ Prototype Lab Flow Project
 ==========================
 
 Projects website: <https://mndk0076.github.io/>
@@ -209,13 +209,13 @@ Table of Contents
 
 5.  [Bibliography](#5-bibliography)
 
-Illustration/Diagrams
----------------------
+List of Illustration/Diagrams
+-----------------------------
 
 # 1. Introduction
 As students in the Computer Engineering Technology program, we will be integrating the knowledge and skills we have learned from our program into this Internet of Things themed capstone project. This proposal requests the approval to build the hardware portion that will connect to a database as well as to a mobile device application. The Internet connected hardware will include a custom PCB with sensors and actuators for LCD monitor and a scanner. The database will store all of the items from the parts crib for availability of the parts, and all of the users and admins info from the mobile app. The mobile device functionality will include a mobile app for users to request items, a LCD monitor that display the users requested items, a scanner to scan the user mobile app when returning the items, a mobile app for the users to send request items and will be further detailed in the mobile application proposal. We will be collaborating with Humber College Technology Department. In the winter semester we plan to form a group with the following students; Kenneth Mendoza, Sukhdeep Sehra, Matheus Rondinelli and Gurpreet Jhita, who are also building similar hardware this term and working on the mobile application. The hardware will be completed in CENG 317 Hardware Production Techniques independently and the application will be completed in CENG 319 Software Project. These will be integrated together in the subsequent term in CENG 355 Computer Systems Project.
 
-# 2. Software Requirements Specification
+# 2. Project Description
 
 ## 2.1 Product Introduction
 
@@ -227,7 +227,7 @@ In this project, we will create a mobile application which allows the students t
 
 ### 2.1.3 Product Overview
 
-## 2.2 Overall Description
+## 2.2 Software Requirements Specification
 
 ### 2.2.1 Database
 Our main goal with the database is to make it store the user’s information,
