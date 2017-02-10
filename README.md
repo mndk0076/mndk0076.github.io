@@ -24,13 +24,16 @@ Jhita
 <https://mndk0076.github.io/>
 
 
+Executive Summary
+-----------------
+As students in the Computer Engineering Technology program, we will be integrating the knowledge and skills we have learned from our program into this Internet of Things themed capstone project. This proposal requests the approval to build the hardware portion that will connect to a database as well as to a mobile device application. The Internet connected hardware will include a custom PCB with sensors and actuators for LCD monitor and a scanner. The database will store all of the items from the parts crib for availability of the parts, and all of the users and admins info from the mobile app. The mobile device functionality will include a mobile app for users to request items, a LCD monitor that display the users requested items, a scanner to scan the user mobile app when returning the items, a mobile app for the users to send request items and will be further detailed in the mobile application proposal. We will be collaborating with Humber College Technology Department. In the winter semester we plan to form a group with the following students; Kenneth Mendoza, Sukhdeep Sehra, Matheus Rondinelli and Gurpreet Jhita, who are also building similar hardware this term and working on the mobile application. The hardware will be completed in CENG 317 Hardware Production Techniques independently and the application will be completed in CENG 319 Software Project. These will be integrated together in the subsequent term in CENG 355 Computer Systems Project.
+
 Background
 ----------
-
 Currently, we students have no way of booking time slots or requesting items from the prototype lab through a convenient application. Students have to go personally to the prototype lab and book the time or hope the item required is available. As a team, we feel like this is an inconvenient experience for the students and feel like an automated system would help to improve the current system by making it more efficient and more appealing to the student. Students would be able to book times slots and request items through the application and they would also be able to cancel requested time slots or items, freeing the space or item for another student and without having to go through the lab personally. That would also improve the time management of the staff, since they will not have to manage the times by themselves while having to work and help other students present in the prototype lab.
 
 We have searched for prior art via Humber’s IEEE subscription selecting “My
-Subscribed Content”[1] and have found and read [2] which provides insight into
+Subscribed Content” and have found and read which provides insight into
 similar efforts.
 
 The first article discusses how Gabor used QR decomposition for image encoding.
@@ -136,7 +139,7 @@ important to start tasks as soon as possible to be able to meet deadlines.
 | **Phase 3 Total**                                                                                                                                                                                                                                                                                                                     | **TBD**        |                                                                                                                                |
 | **Material Estimates**                                                                                                                                                                                                                                                                                                                | **Cost**       | **Notes**                                                                                                                      |
 | **Phase 1**                                                                                                                                                                                                                                                                                                                           |                |                                                                                                                                |
-| A microcomputer composed of a quad-core Windows 10 IoT core compatible Broadcom BCM2836 SoC with a 900MHz Application ARM Cortex-A7 32 bit RISC v7-A processor core stacked under 1GB of 450MHz SDRAM, 10/100 Mbit/s Ethernet, GPIO, UART, I²C bus, SPI bus, 8 GB of Secure Digital storage, a power supply, and a USB Wi-Fi adaptor. | \>\$80.00      | An example of a retailer: [3].                                                                                                 |
+| A microcomputer composed of a quad-core Windows 10 IoT core compatible Broadcom BCM2836 SoC with a 900MHz Application ARM Cortex-A7 32 bit RISC v7-A processor core stacked under 1GB of 450MHz SDRAM, 10/100 Mbit/s Ethernet, GPIO, UART, I²C bus, SPI bus, 8 GB of Secure Digital storage, a power supply, and a USB Wi-Fi adaptor. | \>\$80.00      | An example of a retailer:                                                                                                 |
 | Peripherals with cables                                                                                                                                                                                                                                                                                                               |                |                                                                                                                                |
 | Sensors                                                                                                                                                                                                                                                                                                                               |                |                                                                                                                                |
 | Actuators                                                                                                                                                                                                                                                                                                                             |                |                                                                                                                                |
@@ -213,23 +216,29 @@ List of Illustration/Diagrams
 -----------------------------
 
 # 1. Introduction
-As students in the Computer Engineering Technology program, we will be integrating the knowledge and skills we have learned from our program into this Internet of Things themed capstone project. This proposal requests the approval to build the hardware portion that will connect to a database as well as to a mobile device application. The Internet connected hardware will include a custom PCB with sensors and actuators for LCD monitor and a scanner. The database will store all of the items from the parts crib for availability of the parts, and all of the users and admins info from the mobile app. The mobile device functionality will include a mobile app for users to request items, a LCD monitor that display the users requested items, a scanner to scan the user mobile app when returning the items, a mobile app for the users to send request items and will be further detailed in the mobile application proposal. We will be collaborating with Humber College Technology Department. In the winter semester we plan to form a group with the following students; Kenneth Mendoza, Sukhdeep Sehra, Matheus Rondinelli and Gurpreet Jhita, who are also building similar hardware this term and working on the mobile application. The hardware will be completed in CENG 317 Hardware Production Techniques independently and the application will be completed in CENG 319 Software Project. These will be integrated together in the subsequent term in CENG 355 Computer Systems Project.
+-----------------
+The objective of our project is to develop a better method for requesting time in the Prototype Lab. Using the skills we learned throughout the last 5 semesters, we’re going to make the experience for the students a more efficient one, by being able to book time in the Prototype Lab off a mobile application and also add more functionality which also makes the experience better. The types of additional functionality will include being able to book, cancel and reschedule time slots, being able to also request tools and parts that are only available in the Prototype Lab as rental equipment. Students will use the web application to book time slots in the Prototype Lab, after submitting the request the application will provide the student with a QR code, the student will then use the QR code to enter that prototype Lab by holding it up to our scanning device. The device will then update that database letting others know who is currently in the Prototype lab and also for how long they will be there. As an addition to making the experience better for the students, we are also working on a webpage for the administrator, allowing them to manage time slots and collect data that shows what days may be more popular for students to book and what parts are rented more frequently etc.
 
 # 2. Project Description
 
 ## 2.1 Product Introduction
 
 ### 2.1.1 Purpose
+-----------------
 The main goal of our project is to simplify the process of requesting items and booking time slots at the Humber Prototype Lab. Up until now, students have no control on whether there are any items available (or any time slots to fill up) at the lab. And the lab administrators have no way of booking time slots and sometimes have to deal with high traffic of students, without any real control. We feel like the system is outdated and needs to be updated for the fast-paced world of today. Therefore, we are developing the  Lab Flow project, which is an mobile application that aims to speed up this process by allowing students to book time slots through their mobile devices as well as providing more control to the lab administrators, effectively increasing the time efficiency and organization of the lab.
 
 ### 2.1.2 Scope
+---------------
 In this project, we will create a mobile application which allows the students to register their accounts, check availability of items and time slots at the Prototype Lab, and request them. Our database will store each user's information like their name, student number, program of study etc. Furthermore, it will also include all the time slots and all the items requested by students. Lab monitors will have a special account where they will be able to check the booked times and manage them, if necessary. They will also have additional statistics presented to them in charts and graphs showing them what days and times most of the time slots are getting filled up the most and which items are getting requested the most.
 
 ### 2.1.3 Product Overview
+--------------------------
+We will be using a Raspberry Pi 3, a digital camera and a monitor. These three components will make up the majority of our hardware that will be used to scan student QR codes. Our product will consist mostly of a software application and webpage synced to a database.
 
 ## 2.2 Software Requirements Specification
 
 ### 2.2.1 Database
+------------------
 Our main goal with the database is to make it store the user’s information,
 mainly user’s student number so that it can be assigned to the corresponding
 item or time. It will also have all items available in the prototype lab, such
@@ -248,6 +257,7 @@ to create the database and hostinger, which is a free hosting website. Kenneth
 will be in charge of the database.
 
 ### 2.2.2 Web Interface
+-----------------------
 Our web application is going to allow the student to register and/or log in to
 his account. The application will allow students to book a time through the web
 page and also check history of items or booked time slots in the past. The admin
@@ -258,6 +268,7 @@ will have to develop the website and add more functionalities to it. Sukhdeep
 and Gurpreet will be in charge of the web page.
 
 ### 2.2.3 Hardware
+------------------
 Our hardware will be a scanning device used to check-in to the prototype lab. 
 The database will be linked to our scanning device which will allow the student to 
 check-in by just scanning their student id. If the student arrives too early the system 
@@ -266,6 +277,7 @@ does not register for a time slot through the application the device will not al
 student to check-in and will request the student to register into the next available time slot.
 
 ### 2.2.4 Application
+---------------------
 Our application will allow the user to register and by doing so adding himself
 to our database. Once registered, the student will be able to access the other
 classes and request time slots and items from the prototype lab. He will also be
