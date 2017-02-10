@@ -15,7 +15,7 @@ Projects website: <https://mndk0076.github.io/>
 Declaration of Joint Authorship
 -------------------------------
 
-The work defined in this report is a joint collaboration project by Sukhdeep Sehra, Gurpreet Jhita, Matheus Almeida, and Kenneth Mendoza. The work specified is solely of our own creation and is expressed in our own words. We have clearly referenced all work with proper APA citatations with respect to the authors of the information. All work in this project is equally divided.
+The work defined in this report is a joint collaboration project by Sukhdeep Sehra, Gurpreet Jhita, Matheus Almeida, and Kenneth Mendoza. The work specified is solely of our own creation and is expressed in our own words. We have clearly referenced all work with proper APA citatations with respect to the authors of the information. All work in this project is equally divided. Kenneth Mendoza worked on the database. Sukhdeep Sehra worked on the hardware. Matheus Almeida worked on the mobile application. Gurpreet Jhita worked on admin the web site. Everyone collaborated in all aspects of the deveplopent.
 
 
 
