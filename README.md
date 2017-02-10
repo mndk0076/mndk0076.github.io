@@ -37,13 +37,12 @@ Subscribed Content” and have found and read which provides insight into
 similar efforts.
 
 The first article discusses how Gabor used QR decomposition for image encoding.
-[@250340]
 
 The second article discusses how support system for QR codes based educational
-processes. [@7036011]
+processes.
 
 The third article discusses how VLSI implementation of hybrid QR code generation
-system. [@6892829]
+system.
 
 In the Computer Engineering Technology program we have learned about the
 following topics from the respective relevant courses:
