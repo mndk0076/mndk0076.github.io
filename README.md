@@ -417,7 +417,7 @@ and fill the entire circular area on the board with enough but not too much sold
 			
 ![PCB](https://raw.githubusercontent.com/ssehra/ssehra.github.io/master/Build%20Log%20Files/PCB.png)
 
-<br>Image 2: PCB<br>
+Image 2: PCB
 
 ### 3.1.6 Software Setup
 --------------		
