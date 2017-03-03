@@ -322,7 +322,7 @@ will be in charge of the application.
 ## 3.1 Build Instructions
 
 ### 3.1.1 System Diagram
----------------------
+========================
 The webcam will be used to scan ID barcodes and item QR codes to register the parts 
 with students. The codes will then be processed by the raspberry pi. Once everything 
 is processed the Pi will upload the info to the database which can then be accessed 
@@ -332,13 +332,9 @@ through a mobile app for a better visual experience.
 
 *Image 1: System Diagram shows how the different components work*
 		
-### 3.1.2 Bill of Materials/Budget
-------------------------		
-The parts needed for this project are listed below along with how much they cost and 
-where you can go to buy them. Things such as the PCB and Acrylic box was provided by 
-the school but there are a lot of places you can go to aquire them such as hobby shops 
-and electronic shops. Our total budget for phase 1 (first half) was $200.00 and listed 
-below you'll see we managed to stay within our budget.
+### 3.1.2 Build Budget
+======================
+Before we start building something, we need to plan a budget. A budget will be especially helpful in managing the financial costs related to our build. 
 
 ##### Here's a breakdown of the item needed to build this project.
 1. A Raspberry Pi
@@ -359,10 +355,37 @@ below you'll see we managed to stay within our budget.
 - 4.7kΩ Resistor (Qty: 3) $1.35
 - 3mm LED (Qty: 1)  $0.61 
 - N-Channel Logic Level MOSFET (Qty: 1) $0.99
+- ~~Real Time clock Battery (Qty: 1) $0.48~~
+- ~~I2C Real Time Clock (Qty: 1) $11.95~~
+- ~~8-bit I2C ADC&DAC with sensors (Qty: 1) $8.50~~
+- ~~1x4 Header Female (Qty: 2)  $1.70~~
+- ~~1x5 Header Female (Qty: 2) $3.40~~
+
+Let's start with the core of the project, a Raspberry Pi. The Raspberry Pi alone costs around $60-70 online if you're lucky enough find one. We highly recommend opting in for the Raspberry Pi starter kit instead as it comes with all the necessary items like a microSD card, an AC adapter and a case (as well as other stuff like a microSD reader). It's available for about $20-30 extra.
+
+A case is highly recommended as the raspberry pi is relatively fragile microcomputer. A microSD card is required to run the Raspbian OS on the pi. And of course, the AC adapter can be substituted with any microUSB phone/tablet charger.
+
+Moving on, a webcam will be required to scan QR codes. Any USB webcam will do fine. So no need a spend the extra bucks for a high definition webcam. An average webcam will cost between $20 and $35. Or even cheaper if you find a used/refurbished one.
+
+Finally, there is cost associated with the fabricating of a PCB (Printed Circuit board) as well it's components. The Prototype Lab at Humber College charges about $40 to print a PCB. The components we have on my PCB cost about $42.52. However, we do a have a bunch of extra components like sensors and headers that you don't need. This is why is we have them crossed out on the list. Morever, this brings the cost down from $42.52 to $16.49. The actual cost might still be higher since not all components are sold in the quantitiy of single units. As Humber students, all of this is covered as part of our tuition fees. 
+
+Altogether we spent about $100 on the Raspberry Pi starter kit from Amazon. If you buy an older Raspberry Pi, you have to spend extra on a USB wifi receiver or use the ethernet instead. We used my older webcam which we bought for about $35-$40 at the time. And we didn't have to pay extra for the PCB since we're Humber students as well as the PCB components. We're not including a monitor, and a keyboard and a mouse since almost eveybody owns at least one of each. If not then you can buy any monitor with an HDMI and any USB or bluetooth keyboard/mouse combo.
+
+Here's a table thats shows all the items we bought and how much we paid for them. Note all prices are in CAD. We're also including the PCB fabricating cost to create a reference for you to compare total costs.
+
+| Item                               | Cost   |
+|------------------------------------|--------|
+| Rasberry Pi 3 Starter Kit          | $99.99 |
+| USB Webcam		             | $34.99 |
+| PCB Fabrication Cost               | $40    |
+| Reqruired components for PCB       | $42.52 |
+|**Total**                           | **$245.78**|
+
+Our final build cost totaled to about approximately $300 (That's including taxes and other expenses like shipping and handling).
 
 				
 ### 3.1.3 Time Commitment
----------------
+=========================
 Time is a resource arguably as valuable as money. And this project demands plenty of it. 
 
 We had almost 15 weeks to work this project however with these detailed instructions we will be cutting that time significantly for anyone wanting to recreate this project. Majority of our time was spent in implementing the QR scanning functionality and blinking the L.E.D. for feedback. It was our first time soldering and we were able to solder the PCB in less than an hour. 
@@ -370,7 +393,6 @@ We had almost 15 weeks to work this project however with these detailed instruct
 If you already have acquired all the parts and got the PCB printed, we beleive this project can be completed in a day. That's if you copy paste the all the code and it runs flawlessly without any errors.
 		
 ##### Projected Schedule:
-------------------------
 
 | **Tasks**                 | **Time Required**         |
 |---------------------------|---------------------------|
@@ -387,21 +409,12 @@ If you already have acquired all the parts and got the PCB printed, we beleive t
 *Table2: Displays time required to for each task
 		
 
-### 3.1.4 Mechanical Assembly
--------------------
-The assembly of my project is quite simple. The webcam connects to the raspberry pi through 
-the USB connector. The PCB is then connected to the 40 pin connector on top of the raspberry 
-pi. Also connect the HDMI to a monitor for viewing and connect a micro USB power source to 
-the Pi's micro USB port.
-		
-		
 ### 3.1.5 PCB Soldering
----------------
 Time to start building the PCB! However you build something, you must design it first. That's where these files come in handy. Go ahead and download these files.
 
 | Board File | Schematic File |
 |---|---|
-| [HSHV4-student version.brd](/Build Log Files/HSHV4-student version.brd) | [HSHV4-student version.sch](/Build Log Files/HSHV4-student version.sch) |
+| [HSHV4-student version.brd](https://raw.githubusercontent.com/ssehra/ssehra.github.io/master/Build%20Log%20Files/HSHV4-student%20version.brd) | [HSHV4-student version.sch](https://raw.githubusercontent.com/ssehra/ssehra.github.io/master/Build%20Log%20Files/HSHV4-student%20version.sch) |
 
 Now that you have these files, you'll need eagle to open them. Eagle can be downloaded  **-->** [here](https://cadsoft.io/). After installing Eagle, edit the name in the files to your own. After you finish editing, go ahead and follow the instructions **-->** [here](https://learn.sparkfun.com/tutorials/using-eagle-board-layout/generating-gerbers) to generate the following files.
 
@@ -420,66 +433,104 @@ Now the PCB is ready to soldered. However safety comes first. Make sure to wear 
 ![PCB](https://raw.githubusercontent.com/ssehra/ssehra.github.io/master/Build%20Log%20Files/PCB.png)
 
 Image 2: PCB
-
-### 3.1.6 Software Setup
---------------		
-Start by assembling the raspberry pi into its casing. Once all assembled make sure to 
-have your HDMI cable connected first along with a keyboard and mouse. Before powering 
-up your Raspberry Pi make sure your SD card has the appropriate operating system. You 
-can visit Raspberrypi.org to download the free operating system and the instructions 
-on how to install on an SD card. Once that is finished, insert the SD card into the 
-Raspberry Pi and connect the micro USB power adaptor. The unit will take a few minutes 
-for its first time boot.Once you have powered up make sure to open up the terminal and run:
-
-<pre><code>sudo apt-get update</code></pre>
-<pre><code>sudo apt-get upgrade</code></pre>
-			
-This will ensure that you have updated to the latest firmware and drivers.Next download 
-Necessary software. Start by installing the webcam driver by running:
-
-<pre><code>sudo apt-get install fswebcam</code></pre>
-
-Next you’ll need to install python, zbar library and pillow by running:
-
-<pre><code>sudo apt-get install python-dev</code></pre>
-<pre><code>sudo apt-get install python-pip</code></pre>
-<pre><code>sudo apt-get install python-pip</code></pre>
-<pre><code>sudo apt-get install python-httplib2</code></pre>
-
-Once all that is installed and downloaded you’ll need to download the zbar library from 
-the official <a href="https://github.com/npinchot/zbar"> Github account</a> and export 
-the files into a single folder. Once downloaded run:
-
-<pre><code>python setup.py install –user </code></pre>
-
-This will install the appropriate files and will be done automatically once the command 
-runs. Then download the code listed below and run:
-
-<pre><code>gcc –Wall –o executable name c_file.c – lwiringPi"</code></pre>
-
-Once that code is compiled run the executable name that you chose for the program and 
-youll be able to scan barcodes and view them in a file called student_numbers
-
-### 3.1.7 Unit Testing
--------------
-The unit testing is always the first thing that should be done in order to ensure the 
-reliability of the hardware. The PCB was the main board we needed to test since it was 
-the only one that had been soldered by us. Most of our hardware was pre-built and needed 
-to just be connected together.We were able to successfully test our PCB in the prototype 
-lab with Vlad and all the components were working fine with no shorts or fixes required.
 		
-### 3.1.8 Production Testing
-------------------
-Production testing can be done by running each individual code by itself to ensure each 
-component is working. The webcam can be tested by taking screen shots and checking the 
-output file to see if the webcam is able to see anything.
-		
-### 3.1.9 Project Reproducible ?
+### Mechanical Assembly & Power Up
+==================================
+By now, you have acquired all the parts you are ready to start doing mechanical assembly. It's extremely easy from here onwards since this guide a shortchut to the finishline. 
 
-Yes, we believe once following these build instructions one can easily reproduce this project 
-in a matter of a week’s time. 
-		
+You should now have the following: a Raspberry Pi, a USB Webcam, a MicroUSB power source and A MicroSD Card (8GB or higher). The starter kit's MicroSD card comes with pre-loaded Raspbian.iso so all you have to do is install it. If it doens't then it can downloaded from the Raspberry Pi website and copied on the MicroSD via a card reader (also included in the starter kit). Insert the flash card into Raspberry Pi.
 
+Begin by connecting power, HDMI and a keyboard and mouse and the USB Webcam to the Raspberry Pi. Also connect your PCB to  the Raspberry Pi. After it boots to the desktop, use **sudo apt-get update** on the commandline terminal to update the Raspbian to the latest version. Then use **sudo apt-get dist-upgrade** to upgrade all the installed packages. These commands require internet (ethernet or wifi) to download the updates.
+
+That's it for the assembly.
+
+### Unit Testing
+================
+#### Webcam functionality testing
+For testing, start by installing the fswebcam library by typing **sudo apt-get install fswebcam**. Then type fswebcam followed by a filename with .jpg extention. For example, **fswebcam image.jpg**. This will snap a picture and save it the current directory with the filename image.jpg. If this works, that means the USB Webcam functions properly.
+
+#### PCB functionality testing
+To test the PCB, run the the traffic2B.c (source code available **-->** [here](https://raw.githubusercontent.com/ssehra/ssehra.github.io/master/Build%20Log%20Files/traffic2B.c)) with the following steps.
+
+1. Type **sudo apt-get install wiringPi** on the terminal to the the Pi Wiring Library
+2. Compile the file using **gcc -Wall -o traffic2B traffic2B.c -lwiringPi** (this creates an execuatalbe object called traffic2B)
+3. Run the file using **sudo ./traffic2B**
+
+This should start blinking the L.E.D's in a traffic light pattern for an endless loop. Use **Ctrl+C** to exit the program. If this works, this means the PCB is ready to be used.
+
+### Scanning QR Codes
+=====================
+You can generate your own QR Codes ---> [here](http://www.qr-code-generator.com/), or any other website of your choosing. If you are using a service thats allows you to set the pixel count of the QR code, we recommend setting it to the minimum as it's faster and can be handled by webcams with lower resolution. 
+
+#### Now we install the zbar library to scan QR codes. Follow these step below:
+1. Type **sudo apt-get install zbar-tools** on the terminal
+2. Use **ls /dev/video*/** to find your video source
+3. Test by scanning a QR code by typing **zbarcam /dev/video#** on the terminal. (Note: the pound sign "#" is not literal value, it's supposed to represent the number that step 2 returns returns).
+
+Your webcam should now be working so go ahead and scan a QR code. You should now see the value of QR Code on the terminal saying preceeded by the string "QR Code:". You can scan as many QR codes as you'd like. Use **Ctrl+C** to exit the program.
+
+The QR Code scanner has been implemented. 
+
+Nope. You're still not done yet. You need to add the caplibity to blink the L.E.D as well as save the results into a file for external use (ex: storing information into a database). Keep reading to find out how you add these.
+
+#### Run the follwing code to Scan QR Codes to implement the QR code scanner
+| Shell Script | Python Blink | greenLight.c |
+|---|---|---|
+|[scanqr.sh](https://raw.githubusercontent.com/ssehra/ssehra.github.io/master/Build%20Log%20Files/scanqr.sh)|[alertLight.py](https://raw.githubusercontent.com/ssehra/ssehra.github.io/master/Build%20Log%20Files/alertLight.py)|[greenLight.c](https://raw.githubusercontent.com/ssehra/ssehra.github.io/master/Build%20Log%20Files/greenLight.c)
+
+The python code is pretty simple it turns the the L.E.D on for 1/8th of a second and then turns it off for the same duration. This cycle is repeated 11 times to show the L.E.D feedback. 
+
+To change the 1/8th second on/off duration simply change the **time.sleep(0.125)** value to any number you like in the blink function. Lower values results in short durations and conversely higher values result in longer durations.
+```python
+def blink(pin):  
+        GPIO.output(pin,GPIO.HIGH)  
+        time.sleep(0.125)  
+        GPIO.output(pin,GPIO.LOW)  
+        time.sleep(0.125)  
+        return
+```
+
+Moreover you can also change the number of cyles for how many times this led on/off will be repeated. Simply change the loop count by changing 11 to any value you desire.
+```python
+for i in range(0,11):
+```
+
+When it's all done you test run this program by typing **python alert.py** on the terminal. The L.E.D. should display according to your modifications. 
+
+The C file *greenLight.c* is just there to initiate the green light for use during the scanning process. It just blinks the led in green for 1/10th of the second. I recommend leaving it as is.
+
+The Shell Script file *scanqr.sh* is where the bulk of the program lies. It starts off by compiling and executing *greenLight.c*. Then it defines a few variables for storing information. Every session of script execution produces a file called "scan" followed by a timestamp and the .txt extention. You can change the output filename by editing the variable $ScanResult.
+```bash
+# Name of scan results file
+ScanResult="$cwd/scan_$DATE.txt"
+```
+
+The fuction *scan()* initiates zbarcam to scan QR codes and then kills the task after saving the output. It even asks the user to scan multiple entires. Since it's using zbarcam you apply modifications by using flags like *--prescale* to set the resolution of the scanning resolution. 
+```bash
+function scan() {
+  zbarcam --raw --prescale=320x240 /dev/video0 > $tmp &
+  ...
+  # Kill tasks, free up space and call test.py to blink L.E.D.
+  # Append scan results to file
+  # Show scan results
+  # Prompt to continue scanning
+}
+```
+More inforation about the flags and their usages can be found --> [here](http://manpages.ubuntu.com/manpages/xenial/man1/zbarcam.1.html).
+
+#### To run the final code follow these steps:
+1. Make sure all three core files: *greenLight.c*, *alertLight.py* and *scanqr.sh* are in the same directory.
+2. On the terminal, use **chmod 777** followed by the filenames and grant all Read-Write-Execute permissions to the core files.
+3. Type **./scanqr.sh** to execute the shell script.
+
+You should now have the program working. The program scans QR code and then blinks the L.E.D. as well showing the scanned item on the screen. After scanning an item it prompts to scan another. If you choose yes, it scans another item and prompts to scan more items. If you choose no, then the program exits and shows the list of items scanned during the session. According to our code, every session generates a new file with a timestamp. You can use one file and reuse if you want. Futhermore, you can press **Ctrl+C** anytime to exit the program.
+
+Congratulations! You've just implemented the full QR Code scanner program.
+
+
+### 3.1.9 Project Reproduciblility
+Yes, we believe once following these build instructions one can easily reproduce this project in a matter of a week’s time. 
+		
 Click >> <a href="project files.zip" target="_self"><font color="#0d38e2"><u>download</u></font></a> for source files.		
 	
 
