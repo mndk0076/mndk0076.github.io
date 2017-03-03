@@ -204,26 +204,28 @@ Table of Contents
      +  [2.2.3 Hardware](#223-hardware)
 
       + [2.2.4 Application](#224-application)
+
+3.  [Hardware Production](#3-hardware-production)
       
-   + [2.3 Build Instructions](#23-build-instructions)
+   + [3.2 Build Instructions](#23-build-instructions)
 
-     - [2.3.1 System Diagram](#221-system-diagram)
+     - [3.1 System Diagram](#221-system-diagram)
 
-      - [2.3.2 Bill of Materials/Budget](#222-bill-of-materials/budget)
+      - [3.1.2 Bill of Materials/Budget](#222-bill-of-materials/budget)
 
-     +  [2.3.3 Time Commitment](#223-time-commitment)
+     - [3.1.3 Time Commitment](#223-time-commitment)
 
-      + [2.3.4 Mechanical Assembly](#224-mechanical-assembly)
+      - [3.1.4 Mechanical Assembly](#224-mechanical-assembly)
       
-     - [2.3.5 PCB / Soldering](#221-pcb/soldering)
+     - [3.1.5 PCB / Soldering](#221-pcb/soldering)
 
-      - [2.3.6 Software Setup](#222-software-setup)
+      - [3.1.6 Software Setup](#222-software-setup)
       
-     +  [2.3.7 Unit Testing](#223-unit-testing)
+      - [3.1.7 Unit Testing](#223-unit-testing)
 
-      + [2.3.8 Production Testing](#224-production-testing)
+      - [3.1.8 Production Testing](#224-production-testing)
       
-      - [2.3.6 Project Reproducible ?](#222-project-reproducible ?)
+      - [3.1.6 Project Reproducible ?](#222-project-reproducible-?)
 
 3.  [Conclusion](#3-conclusion)
 
@@ -317,20 +319,20 @@ will have access to the database, since it needs its information to display it
 back to the user and it will support English and French. Matheus and Kenneth
 will be in charge of the application.
 
-## 2.3 Build Instructions
----------------------
-### 2.3.1 System Diagram
+## 3.1 Build Instructions
+
+### 3.1.1 System Diagram
 ---------------------
 The webcam will be used to scan ID barcodes and item QR codes to register the parts 
 with students. The codes will then be processed by the raspberry pi. Once everything 
 is processed the Pi will upload the info to the database which can then be accessed 
 through a mobile app for a better visual experience.
 			
-![systemdiagram](https://gurpreetjhita.github.io/blob/master/Build-Log/SystemDiagram.png)
+![systemdiagram](https://gurpreetjhita.github.io/Build-Log/SystemDiagram.png)
 
 *Image 1: System Diagram shows how the different components work
 		
-### 2.3.2 Bill of Materials/Budget
+### 3.1.2 Bill of Materials/Budget
 ------------------------		
 The parts needed for this project are listed below along with how much they cost and 
 where you can go to buy them. Things such as the PCB and Acrylic box was provided by 
@@ -338,7 +340,7 @@ the school but there are a lot of places you can go to aquire them such as hobby
 and electronic shops. Our total budget for phase 1 (first half) was $200.00 and listed 
 below you'll see we managed to stay within our budget.
 				
-### 2.3.3 Time Commitment
+### 3.1.3 Time Commitment
 ---------------
 The time committed to complete the project was 15 weeks as listed in the project schedule 
 but with the instructions provided it could be reproduced in less than a week if parts
@@ -377,7 +379,7 @@ Time Commiment Schedule:
 *Table2: Displays time required to for each task
 		
 
-### 2.3.4 Mechanical Assembly
+### 3.1.4 Mechanical Assembly
 -------------------
 The assembly of my project is quite simple. The webcam connects to the raspberry pi through 
 the USB connector. The PCB is then connected to the 40 pin connector on top of the raspberry 
@@ -385,17 +387,17 @@ pi. Also connect the HDMI to a monitor for viewing and connect a micro USB power
 the Pi's micro USB port.
 		
 		
-### 2.3.5 PCB / Soldering
+### 3.1.5 PCB / Soldering
 ---------------
 The PCB contains resistors, transistors, an LED, 2 four pin headers and a 5 pin header. 
 All of these components were soldered together using non led based solder and took about 
 an hour to properly solder everything without any errors. It is best to take your time 
 and fill the entire circular area on the board with enough but not too much solder.
 			
-![PCB](https://gurpreetjhita.github.io/blob/master/Build-Log/pcb.jpg)
+![PCB](https://gurpreetjhita.github.io/Build-Log/pcb.jpg)
 Image 2: PCB
 
-### 2.3.6 Software Setup
+### 3.1.6 Software Setup
 --------------		
 Start by assembling the raspberry pi into its casing. Once all assembled make sure to 
 have your HDMI cable connected first along with a keyboard and mouse. Before powering 
@@ -434,7 +436,7 @@ runs. Then download the code listed below and run:
 Once that code is compiled run the executable name that you chose for the program and 
 youll be able to scan barcodes and view them in a file called student_numbers
 
-### 2.3.7 Unit Testing
+### 3.1.7 Unit Testing
 -------------
 The unit testing is always the first thing that should be done in order to ensure the 
 reliability of the hardware. The PCB was the main board we needed to test since it was 
@@ -442,13 +444,13 @@ the only one that had been soldered by us. Most of our hardware was pre-built an
 to just be connected together. I was able to successfully test my PCB in the prototype 
 lab with Vlad and all the components were working fine with no shorts or fixes required.
 		
-### 2.3.8 Production Testing
+### 3.1.8 Production Testing
 ------------------
 Production testing can be done by running each individual code by itself to ensure each 
 component is working. The webcam can be tested by taking screen shots and checking the 
 output file to see if the webcam is able to see anything.
 		
-### 2.3.9 Project Reproducible ?
+### 3.1.9 Project Reproducible ?
 
 Yes, I believe once following these build instructions one can easily reproduce this project 
 in a matter of a week’s time. 
@@ -457,8 +459,8 @@ in a matter of a week’s time.
 Click >> <a href="project files.zip" target="_self"><font color="#0d38e2"><u>download</u></font></a> for source files.		
 	
 
-# 3. Conclusion
+# 4. Conclusion
 
-# 4. Recommendations
+# 5. Recommendations
 
-# 5. Bibliography
+# 6. Bibliography
