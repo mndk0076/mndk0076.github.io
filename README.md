@@ -330,7 +330,8 @@ through a mobile app for a better visual experience.
 			
 ![systemdiagram](https://gurpreetjhita.github.io/Build-Log/SystemDiagram.png)
 
-*Image 1: System Diagram shows how the different components work
+
+*Image 1: System Diagram shows how the different components work*
 		
 ### 3.1.2 Bill of Materials/Budget
 ------------------------		
