@@ -363,26 +363,13 @@ below you'll see we managed to stay within our budget.
 				
 ### 3.1.3 Time Commitment
 ---------------
-The time committed to complete the project was 15 weeks as listed in the project schedule 
-but with the instructions provided it could be reproduced in less than a week if parts
-arrive in time. The first week consisted of creating our online web template website via 
-github and learning the basics of how to use it. By week 2 the project proposal had been 
-completed and ready to submit. Week 3 consisted of figuring out my team mates and working on 
-the project schedule. On week 4 the budget report had been completed and submitted and the order 
-for parts had been placed. By week 5 I had received my parts and was on my way to assembling
-while working on completing and testing my PCB. Week 6 I had completed the mechanical assembly 
-of my project and was ready to start researching the software portion of the hardware. Week 7 
-I had powered up and put together my parts along with peer grading the other students to ensure 
-everyone was on schedule. I began testing different methods for scanning barcodes and came 
-across a great tool called Zbar which can be found online. Week 8 we had completed the Placard 
-for our assignment which can be found <a href="/Documentation/placard.jpg">here.</a> I also 
-began working on my build video for week 9. Week 10 we had to demonstrate the functionality of
-our hardware. In the following weeks I began to improve the software to better scan barcodes 
-with a higher success rate. By week 13 my project was completed and my presentation was done 
-to show its functionality and purpose. Listed below is a table that shows how much time it would 
-take to build the project if one were to follow these build instructions.
+Time is a resource arguably as valuable as money. And this project demands plenty of it. 
+
+We had almost 15 weeks to work this project however with these detailed instructions we will be cutting that time significantly for anyone wanting to recreate this project. Majority of our time was spent in implementing the QR scanning functionality and blinking the L.E.D. for feedback. It was our first time soldering and we was able to solder the PCB in less than an hour. 
+
+If you already have acquired all the parts and got the PCB printed, we beleive this project can be completed in a day. That's if you copy paste the all the code and it runs flawlessly without any errors.
 		
-Time Commiment Schedule:
+##### Projected Schedule:
 ------------------------
 
 | **Tasks**                 | **Time Required**         |
@@ -408,13 +395,28 @@ pi. Also connect the HDMI to a monitor for viewing and connect a micro USB power
 the Pi's micro USB port.
 		
 		
-### 3.1.5 PCB / Soldering
+### 3.1.5 PCB Soldering
 ---------------
-The PCB contains resistors, transistors, an LED, 2 four pin headers and a 5 pin header. 
-All of these components were soldered together using non led based solder and took about 
-an hour to properly solder everything without any errors. It is best to take your time 
-and fill the entire circular area on the board with enough but not too much solder.
-			
+Time to start building the PCB! However you build something, you must design it first. That's where these files come in handy. Go ahead and download these files.
+
+| Board File | Schematic File |
+|---|---|
+| [HSHV4-student version.brd](/Build Log Files/HSHV4-student version.brd) | [HSHV4-student version.sch](/Build Log Files/HSHV4-student version.sch) |
+
+Now that you have these files, you'll need eagle to open them. Eagle can be downloaded  **-->** [here](https://cadsoft.io/). After installing Eagle, edit the name in the files to your own. After you finish editing, go ahead and follow the instructions **-->** [here](https://learn.sparkfun.com/tutorials/using-eagle-board-layout/generating-gerbers) to generate the following files.
+
+| Top Copper (.GTL) | Bottom Copper (.GBL) | Top Soldermask (.GTS) | Bottom Soldermask (.GBS) | Top Silkscreen (.GTO) | Bottom Silkscreen (.GBO) | Drill File (.TXT) |
+|---|---|---|---|---|---|---|
+| [HSHV4-student version.GTL](https://raw.githubusercontent.com/ssehra/ssehra.github.io/master/Build%20Log%20Files/HSHV4-student%20version.GTL) | [HSHV4-student version.GBL](https://raw.githubusercontent.com/ssehra/ssehra.github.io/master/Build%20Log%20Files/HSHV4-student%20version.GBL) | [HSHV4-student version.GTS](https://raw.githubusercontent.com/ssehra/ssehra.github.io/master/Build%20Log%20Files/HSHV4-student%20version.GTS) | [HSHV4-student version.GBS](https://raw.githubusercontent.com/ssehra/ssehra.github.io/master/Build%20Log%20Files/HSHV4-student%20version.GBS) | [HSHV4-student version.GTO](https://raw.githubusercontent.com/ssehra/ssehra.github.io/master/Build%20Log%20Files/HSHV4-student%20version.GTO) | [HSHV4-student version.GBO](https://raw.githubusercontent.com/ssehra/ssehra.github.io/master/Build%20Log%20Files/HSHV4-student%20version.GBO) | [HSHV4-student version.TXT](https://raw.githubusercontent.com/ssehra/ssehra.github.io/master/Build%20Log%20Files/HSHV4-student%20version.TXT) |
+
+#### Schematic for the PCB
+![Alt text](https://raw.githubusercontent.com/ssehra/ssehra.github.io/master/Build%20Log%20Files/Schematic.PNG)
+
+All of these files are used to instruct the machine with the coordinates and to engrave the PCB. It takes about 4-5 hours for the machine to print it. After it's done, wash with water *(preferably deionized water)* and wipe it a piece or cloth to avoid leaving water marks (I recommend using a micro-fiber cloth) and wait for it to dry completely. After that's done you can sand the PCB a bit just to make it shinier. If you do sand it you have the repeat the washing process again.
+
+Now the PCB is ready to soldered. However safety comes first. Make sure to wear safety glasses and and dress appropriately for a lab/workplace environmnet. Now Use the schmatic as the guide and solder each of the components to their respective places and making sure that the excess solder is not causing a short. Now inspect each soldering carefully again use a voltmeter to test for continuity. If all goes well you are ready to move on to the next chapter.
+
+<br>			
 ![PCB](https://raw.githubusercontent.com/ssehra/ssehra.github.io/master/Build%20Log%20Files/PCB.png)
 
 Image 2: PCB
