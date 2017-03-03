@@ -330,7 +330,7 @@ through a mobile app for a better visual experience.
 			
 ![systemdiagram](https://gurpreetjhita.github.io/Build-Log/SystemDiagram.png)
 
-<br>*Image 1: System Diagram shows how the different components work*<br>
+*Image 1: System Diagram shows how the different components work*
 		
 ### 3.1.2 Bill of Materials/Budget
 ------------------------		
@@ -416,7 +416,8 @@ an hour to properly solder everything without any errors. It is best to take you
 and fill the entire circular area on the board with enough but not too much solder.
 			
 ![PCB](https://raw.githubusercontent.com/ssehra/ssehra.github.io/master/Build%20Log%20Files/PCB.png)
-Image 2: PCB
+
+<br>Image 2: PCB<br>
 
 ### 3.1.6 Software Setup
 --------------		
