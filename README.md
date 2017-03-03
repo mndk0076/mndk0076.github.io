@@ -158,7 +158,7 @@ Concluding Remarks
 ------------------
 
 This proposal presents a plan for providing an IoT solution for *Future Humber
-Quadcopter Swarm*. This is an opportunity to integrate the knowledge and skills
+PrototypeLab Flow*. This is an opportunity to integrate the knowledge and skills
 developed in our program to create a collaborative IoT capstone project
 demonstrating my ability to learn how to support projects. I request approval of this project.
 
