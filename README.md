@@ -320,20 +320,17 @@ back to the user and it will support English and French. Matheus and Kenneth
 will be in charge of the application.
 
 ## 3.1 Build Instructions
+-------------------------
 
 ### 3.1.1 System Diagram
-========================
-The webcam will be used to scan ID barcodes and item QR codes to register the parts 
-with students. The codes will then be processed by the raspberry pi. Once everything 
-is processed the Pi will upload the info to the database which can then be accessed 
-through a mobile app for a better visual experience.
+The webcam will be used to scan ID barcodes and item QR codes to register the parts with students. The codes will then be processed by the raspberry pi. Once everything is processed the Pi will upload the info to the database which can then be accessed through a mobile app for a better visual experience.
 			
 ![systemdiagram](https://gurpreetjhita.github.io/Build-Log/SystemDiagram.png)
 
 *Image 1: System Diagram shows how the different components work*
+========================
 		
 ### 3.1.2 Build Budget
-======================
 Before we start building something, we need to plan a budget. A budget will be especially helpful in managing the financial costs related to our build. 
 
 ##### Here's a breakdown of the item needed to build this project.
@@ -382,17 +379,16 @@ Here's a table thats shows all the items we bought and how much we paid for them
 |**Total**                           | **$245.78**|
 
 Our final build cost totaled to about approximately $300 (That's including taxes and other expenses like shipping and handling).
-
+======================
 				
 ### 3.1.3 Time Commitment
-=========================
 Time is a resource arguably as valuable as money. And this project demands plenty of it. 
 
 We had almost 15 weeks to work this project however with these detailed instructions we will be cutting that time significantly for anyone wanting to recreate this project. Majority of our time was spent in implementing the QR scanning functionality and blinking the L.E.D. for feedback. It was our first time soldering and we were able to solder the PCB in less than an hour. 
 
 If you already have acquired all the parts and got the PCB printed, we beleive this project can be completed in a day. That's if you copy paste the all the code and it runs flawlessly without any errors.
 		
-##### Projected Schedule:
+##### Work Schedule:
 
 | **Tasks**                 | **Time Required**         |
 |---------------------------|---------------------------|
@@ -406,10 +402,10 @@ If you already have acquired all the parts and got the PCB printed, we beleive t
 | Designing acrylic box     | 2 hours                   |
 | Laser Cutting             | 15-30 minutes             |
 
-*Table2: Displays time required to for each task
-		
+*Table2: Displays time required to for each task*
+=========================
 
-### 3.1.5 PCB Soldering
+### 3.1.4 PCB Soldering
 Time to start building the PCB! However you build something, you must design it first. That's where these files come in handy. Go ahead and download these files.
 
 | Board File | Schematic File |
@@ -432,10 +428,10 @@ Now the PCB is ready to soldered. However safety comes first. Make sure to wear 
 <br>			
 ![PCB](https://raw.githubusercontent.com/ssehra/ssehra.github.io/master/Build%20Log%20Files/PCB.png)
 
-Image 2: PCB
+Image 2: Finished soldered PCB
+=========================
 		
-### Mechanical Assembly & Power Up
-==================================
+### 3.1.5 Mechanical Assembly & Power Up
 By now, you have acquired all the parts you are ready to start doing mechanical assembly. It's extremely easy from here onwards since this guide a shortchut to the finishline. 
 
 You should now have the following: a Raspberry Pi, a USB Webcam, a MicroUSB power source and A MicroSD Card (8GB or higher). The starter kit's MicroSD card comes with pre-loaded Raspbian.iso so all you have to do is install it. If it doens't then it can downloaded from the Raspberry Pi website and copied on the MicroSD via a card reader (also included in the starter kit). Insert the flash card into Raspberry Pi.
@@ -443,9 +439,9 @@ You should now have the following: a Raspberry Pi, a USB Webcam, a MicroUSB powe
 Begin by connecting power, HDMI and a keyboard and mouse and the USB Webcam to the Raspberry Pi. Also connect your PCB to  the Raspberry Pi. After it boots to the desktop, use **sudo apt-get update** on the commandline terminal to update the Raspbian to the latest version. Then use **sudo apt-get dist-upgrade** to upgrade all the installed packages. These commands require internet (ethernet or wifi) to download the updates.
 
 That's it for the assembly.
+=========================
 
-### Unit Testing
-================
+### 3.1.6 Unit Testing
 #### Webcam functionality testing
 For testing, start by installing the fswebcam library by typing **sudo apt-get install fswebcam**. Then type fswebcam followed by a filename with .jpg extention. For example, **fswebcam image.jpg**. This will snap a picture and save it the current directory with the filename image.jpg. If this works, that means the USB Webcam functions properly.
 
@@ -457,9 +453,9 @@ To test the PCB, run the the traffic2B.c (source code available **-->** [here](h
 3. Run the file using **sudo ./traffic2B**
 
 This should start blinking the L.E.D's in a traffic light pattern for an endless loop. Use **Ctrl+C** to exit the program. If this works, this means the PCB is ready to be used.
+=========================
 
-### Scanning QR Codes
-=====================
+### 3.1.7 Scanning QR Codes
 You can generate your own QR Codes ---> [here](http://www.qr-code-generator.com/), or any other website of your choosing. If you are using a service thats allows you to set the pixel count of the QR code, we recommend setting it to the minimum as it's faster and can be handled by webcams with lower resolution. 
 
 #### Now we install the zbar library to scan QR codes. Follow these step below:
@@ -526,13 +522,13 @@ More inforation about the flags and their usages can be found --> [here](http://
 You should now have the program working. The program scans QR code and then blinks the L.E.D. as well showing the scanned item on the screen. After scanning an item it prompts to scan another. If you choose yes, it scans another item and prompts to scan more items. If you choose no, then the program exits and shows the list of items scanned during the session. According to our code, every session generates a new file with a timestamp. You can use one file and reuse if you want. Futhermore, you can press **Ctrl+C** anytime to exit the program.
 
 Congratulations! You've just implemented the full QR Code scanner program.
+=========================
 
-
-### 3.1.9 Project Reproduciblility
+### 3.1.8 Project Reproduciblility
 Yes, we believe once following these build instructions one can easily reproduce this project in a matter of a week’s time. 
 		
 Click >> <a href="project files.zip" target="_self"><font color="#0d38e2"><u>download</u></font></a> for source files.		
-	
+=========================
 
 # 4. Conclusion
 
