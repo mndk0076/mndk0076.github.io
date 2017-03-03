@@ -379,6 +379,7 @@ Here's a table thats shows all the items we bought and how much we paid for them
 |**Total**                           | **$245.78**|
 
 Our final build cost totaled to about approximately $300 (That's including taxes and other expenses like shipping and handling).
+
 ======================
 				
 ### 3.1.3 Time Commitment
@@ -403,6 +404,7 @@ If you already have acquired all the parts and got the PCB printed, we beleive t
 | Laser Cutting             | 15-30 minutes             |
 
 *Table2: Displays time required to for each task*
+
 =========================
 
 ### 3.1.4 PCB Soldering
@@ -428,7 +430,8 @@ Now the PCB is ready to soldered. However safety comes first. Make sure to wear 
 <br>			
 ![PCB](https://raw.githubusercontent.com/ssehra/ssehra.github.io/master/Build%20Log%20Files/PCB.png)
 
-Image 2: Finished soldered PCB
+*Image 2: Finished soldered PCB*
+
 =========================
 		
 ### 3.1.5 Mechanical Assembly & Power Up
@@ -439,6 +442,7 @@ You should now have the following: a Raspberry Pi, a USB Webcam, a MicroUSB powe
 Begin by connecting power, HDMI and a keyboard and mouse and the USB Webcam to the Raspberry Pi. Also connect your PCB to  the Raspberry Pi. After it boots to the desktop, use **sudo apt-get update** on the commandline terminal to update the Raspbian to the latest version. Then use **sudo apt-get dist-upgrade** to upgrade all the installed packages. These commands require internet (ethernet or wifi) to download the updates.
 
 That's it for the assembly.
+
 =========================
 
 ### 3.1.6 Unit Testing
@@ -453,6 +457,7 @@ To test the PCB, run the the traffic2B.c (source code available **-->** [here](h
 3. Run the file using **sudo ./traffic2B**
 
 This should start blinking the L.E.D's in a traffic light pattern for an endless loop. Use **Ctrl+C** to exit the program. If this works, this means the PCB is ready to be used.
+
 =========================
 
 ### 3.1.7 Scanning QR Codes
@@ -522,12 +527,14 @@ More inforation about the flags and their usages can be found --> [here](http://
 You should now have the program working. The program scans QR code and then blinks the L.E.D. as well showing the scanned item on the screen. After scanning an item it prompts to scan another. If you choose yes, it scans another item and prompts to scan more items. If you choose no, then the program exits and shows the list of items scanned during the session. According to our code, every session generates a new file with a timestamp. You can use one file and reuse if you want. Futhermore, you can press **Ctrl+C** anytime to exit the program.
 
 Congratulations! You've just implemented the full QR Code scanner program.
+
 =========================
 
 ### 3.1.8 Project Reproduciblility
 Yes, we believe once following these build instructions one can easily reproduce this project in a matter of a week’s time. 
 		
 Click >> <a href="project files.zip" target="_self"><font color="#0d38e2"><u>download</u></font></a> for source files.		
+
 =========================
 
 # 4. Conclusion
