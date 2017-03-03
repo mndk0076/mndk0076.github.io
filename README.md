@@ -207,25 +207,24 @@ Table of Contents
 
 3.  [Hardware Production](#3-hardware-production)
       
-   + [3.1 Build Instructions](#https://github.com/mndk0076/mndk0076.github.io/blob/master/README.md#31-build-instructions)
+   + [3.1 Build Instructions](#31-build-instructions)
 
-     - [3.1 System Diagram](#221-system-diagram)
+     - [3.1.1 System Diagram](#311-system-diagram)
 
-      - [3.1.2 Bill of Materials/Budget](#222-bill-of-materials/budget)
+      - [3.1.2 Build Budget](#312-build-budget)
 
-     - [3.1.3 Time Commitment](#223-time-commitment)
+     - [3.1.3 Time Commitment](#313-time-commitment)
 
-      - [3.1.4 Mechanical Assembly](#224-mechanical-assembly)
+     - [3.1.4 PCB Soldering](#314-pcb-soldering)
+     
+     - [3.1.5 Mechanical Assembly & Power Up](#315-mechanical-assembly--power-up)
       
-     - [3.1.5 PCB / Soldering](#221-pcb/soldering)
-
-      - [3.1.6 Software Setup](#222-software-setup)
+      - [3.1.6 Unit Testing](#316-unit-testing)
       
-      - [3.1.7 Unit Testing](#223-unit-testing)
+      - [3.1.7 Scanning QR Codes](#317-scanning-qr-codes)
 
-      - [3.1.8 Production Testing](#224-production-testing)
+      - [3.1.8 Project Reproduciblility](#318-project-reproduciblility)
       
-      - [3.1.6 Project Reproducible ?](#222-project-reproducible-?)
 
 3.  [Conclusion](#3-conclusion)
 
