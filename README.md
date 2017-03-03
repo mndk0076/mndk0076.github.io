@@ -207,7 +207,7 @@ Table of Contents
 
 3.  [Hardware Production](#3-hardware-production)
       
-   + [3.2 Build Instructions](#23-build-instructions)
+   + [3.1 Build Instructions](#https://github.com/mndk0076/mndk0076.github.io/blob/master/README.md#31-build-instructions)
 
      - [3.1 System Diagram](#221-system-diagram)
 
