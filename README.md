@@ -415,7 +415,7 @@ All of these components were soldered together using non led based solder and to
 an hour to properly solder everything without any errors. It is best to take your time 
 and fill the entire circular area on the board with enough but not too much solder.
 			
-![PCB](https://gurpreetjhita.github.io/Build-Log/pcb.jpg)
+![PCB](https://raw.githubusercontent.com/ssehra/ssehra.github.io/master/Build%20Log%20Files/PCB.png)
 Image 2: PCB
 
 ### 3.1.6 Software Setup
