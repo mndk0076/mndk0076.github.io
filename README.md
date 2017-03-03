@@ -365,7 +365,7 @@ below you'll see we managed to stay within our budget.
 ---------------
 Time is a resource arguably as valuable as money. And this project demands plenty of it. 
 
-We had almost 15 weeks to work this project however with these detailed instructions we will be cutting that time significantly for anyone wanting to recreate this project. Majority of our time was spent in implementing the QR scanning functionality and blinking the L.E.D. for feedback. It was our first time soldering and we was able to solder the PCB in less than an hour. 
+We had almost 15 weeks to work this project however with these detailed instructions we will be cutting that time significantly for anyone wanting to recreate this project. Majority of our time was spent in implementing the QR scanning functionality and blinking the L.E.D. for feedback. It was our first time soldering and we were able to solder the PCB in less than an hour. 
 
 If you already have acquired all the parts and got the PCB printed, we beleive this project can be completed in a day. That's if you copy paste the all the code and it runs flawlessly without any errors.
 		
@@ -465,7 +465,7 @@ youll be able to scan barcodes and view them in a file called student_numbers
 The unit testing is always the first thing that should be done in order to ensure the 
 reliability of the hardware. The PCB was the main board we needed to test since it was 
 the only one that had been soldered by us. Most of our hardware was pre-built and needed 
-to just be connected together. I was able to successfully test my PCB in the prototype 
+to just be connected together.We were able to successfully test our PCB in the prototype 
 lab with Vlad and all the components were working fine with no shorts or fixes required.
 		
 ### 3.1.8 Production Testing
@@ -476,7 +476,7 @@ output file to see if the webcam is able to see anything.
 		
 ### 3.1.9 Project Reproducible ?
 
-Yes, I believe once following these build instructions one can easily reproduce this project 
+Yes, we believe once following these build instructions one can easily reproduce this project 
 in a matter of a week’s time. 
 		
 
