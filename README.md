@@ -204,6 +204,26 @@ Table of Contents
      +  [2.2.3 Hardware](#223-hardware)
 
       + [2.2.4 Application](#224-application)
+      
+   + [2.3 Build Instructions](#23-build-instructions)
+
+     - [2.3.1 System Diagram](#221-system-diagram)
+
+      - [2.3.2 Bill of Materials/Budget](#222-bill-of-materials/budget)
+
+     +  [2.3.3 Time Commitment](#223-time-commitment)
+
+      + [2.3.4 Mechanical Assembly](#224-mechanical-assembly)
+      
+     - [2.3.5 PCB / Soldering](#221-pcb/soldering)
+
+      - [2.3.6 Software Setup](#222-software-setup)
+      
+     +  [2.3.7 Unit Testing](#223-unit-testing)
+
+      + [2.3.8 Production Testing](#224-production-testing)
+      
+      - [2.3.6 Project Reproducible ?](#222-project-reproducible ?)
 
 3.  [Conclusion](#3-conclusion)
 
@@ -296,6 +316,146 @@ why time or item reservation had to be cancelled or denied. Most of the classes
 will have access to the database, since it needs its information to display it
 back to the user and it will support English and French. Matheus and Kenneth
 will be in charge of the application.
+
+## 2.3 Build Instructions
+---------------------
+### 2.3.1 System Diagram
+---------------------
+The webcam will be used to scan ID barcodes and item QR codes to register the parts 
+with students. The codes will then be processed by the raspberry pi. Once everything 
+is processed the Pi will upload the info to the database which can then be accessed 
+through a mobile app for a better visual experience.
+			
+![systemdiagram](https://gurpreetjhita.github.io/blob/master/Build-Log/SystemDiagram.png)
+
+*Image 1: System Diagram shows how the different components work
+		
+### 2.3.2 Bill of Materials/Budget
+------------------------		
+The parts needed for this project are listed below along with how much they cost and 
+where you can go to buy them. Things such as the PCB and Acrylic box was provided by 
+the school but there are a lot of places you can go to aquire them such as hobby shops 
+and electronic shops. Our total budget for phase 1 (first half) was $200.00 and listed 
+below you'll see we managed to stay within our budget.
+				
+### 2.3.3 Time Commitment
+---------------
+The time committed to complete the project was 15 weeks as listed in the project schedule 
+but with the instructions provided it could be reproduced in less than a week if parts
+arrive in time. The first week consisted of creating our online web template website via 
+github and learning the basics of how to use it. By week 2 the project proposal had been 
+completed and ready to submit. Week 3 consisted of figuring out my team mates and working on 
+the project schedule. On week 4 the budget report had been completed and submitted and the order 
+for parts had been placed. By week 5 I had received my parts and was on my way to assembling
+while working on completing and testing my PCB. Week 6 I had completed the mechanical assembly 
+of my project and was ready to start researching the software portion of the hardware. Week 7 
+I had powered up and put together my parts along with peer grading the other students to ensure 
+everyone was on schedule. I began testing different methods for scanning barcodes and came 
+across a great tool called Zbar which can be found online. Week 8 we had completed the Placard 
+for our assignment which can be found <a href="/Documentation/placard.jpg">here.</a> I also 
+began working on my build video for week 9. Week 10 we had to demonstrate the functionality of
+our hardware. In the following weeks I began to improve the software to better scan barcodes 
+with a higher success rate. By week 13 my project was completed and my presentation was done 
+to show its functionality and purpose. Listed below is a table that shows how much time it would 
+take to build the project if one were to follow these build instructions.
+		
+Time Commiment Schedule:
+------------------------
+
+| **Tasks**                 | **Time Required**         |
+|---------------------------|---------------------------|
+| Preparing Online Template | 1 Weeks                   |
+| Parts Ordered/Delivery    | 2 Weeks                   |
+| Raspberry Pi Setup        | 1 day                     |
+| PCB Soldering             | 2 hours                   |
+| Testing PCB               | 30 mins                   |
+| Research and Coding       | 5 hours in span of 4 days |
+| Mechanical Assembly       | 15 minutes                |
+| Designing acrylic box     | 2 hours                   |
+| Laser Cutting             | 15-30 minutes             |
+
+*Table2: Displays time required to for each task
+		
+
+### 2.3.4 Mechanical Assembly
+-------------------
+The assembly of my project is quite simple. The webcam connects to the raspberry pi through 
+the USB connector. The PCB is then connected to the 40 pin connector on top of the raspberry 
+pi. Also connect the HDMI to a monitor for viewing and connect a micro USB power source to 
+the Pi's micro USB port.
+		
+		
+### 2.3.5 PCB / Soldering
+---------------
+The PCB contains resistors, transistors, an LED, 2 four pin headers and a 5 pin header. 
+All of these components were soldered together using non led based solder and took about 
+an hour to properly solder everything without any errors. It is best to take your time 
+and fill the entire circular area on the board with enough but not too much solder.
+			
+![PCB](https://gurpreetjhita.github.io/blob/master/Build-Log/pcb.jpg)
+Image 2: PCB
+
+### 2.3.6 Software Setup
+--------------		
+Start by assembling the raspberry pi into its casing. Once all assembled make sure to 
+have your HDMI cable connected first along with a keyboard and mouse. Before powering 
+up your Raspberry Pi make sure your SD card has the appropriate operating system. You 
+can visit Raspberrypi.org to download the free operating system and the instructions 
+on how to install on an SD card. Once that is finished, insert the SD card into the 
+Raspberry Pi and connect the micro USB power adaptor. The unit will take a few minutes 
+for its first time boot.Once you have powered up make sure to open up the terminal and run:
+
+<pre><code>sudo apt-get update</code></pre>
+<pre><code>sudo apt-get upgrade</code></pre>
+			
+This will ensure that you have updated to the latest firmware and drivers.Next download 
+Necessary software. Start by installing the webcam driver by running:
+
+<pre><code>sudo apt-get install fswebcam</code></pre>
+
+Next you’ll need to install python, zbar library and pillow by running:
+
+<pre><code>sudo apt-get install python-dev</code></pre>
+<pre><code>sudo apt-get install python-pip</code></pre>
+<pre><code>sudo apt-get install python-pip</code></pre>
+<pre><code>sudo apt-get install python-httplib2</code></pre>
+
+Once all that is installed and downloaded you’ll need to download the zbar library from 
+the official <a href="https://github.com/npinchot/zbar"> Github account</a> and export 
+the files into a single folder. Once downloaded run:
+
+<pre><code>python setup.py install –user </code></pre>
+
+This will install the appropriate files and will be done automatically once the command 
+runs. Then download the code listed below and run:
+
+<pre><code>gcc –Wall –o executable name c_file.c – lwiringPi"</code></pre>
+
+Once that code is compiled run the executable name that you chose for the program and 
+youll be able to scan barcodes and view them in a file called student_numbers
+
+### 2.3.7 Unit Testing
+-------------
+The unit testing is always the first thing that should be done in order to ensure the 
+reliability of the hardware. The PCB was the main board we needed to test since it was 
+the only one that had been soldered by us. Most of our hardware was pre-built and needed 
+to just be connected together. I was able to successfully test my PCB in the prototype 
+lab with Vlad and all the components were working fine with no shorts or fixes required.
+		
+### 2.3.8 Production Testing
+------------------
+Production testing can be done by running each individual code by itself to ensure each 
+component is working. The webcam can be tested by taking screen shots and checking the 
+output file to see if the webcam is able to see anything.
+		
+### 2.3.9 Project Reproducible ?
+---------------------
+Yes, I believe once following these build instructions one can easily reproduce this project 
+in a matter of a week’s time. 
+		
+
+Click >> <a href="project files.zip" target="_self"><font color="#0d38e2"><u>download</u></font></a> for source files.		
+	
 
 # 3. Conclusion
 
