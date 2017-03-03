@@ -339,6 +339,27 @@ where you can go to buy them. Things such as the PCB and Acrylic box was provide
 the school but there are a lot of places you can go to aquire them such as hobby shops 
 and electronic shops. Our total budget for phase 1 (first half) was $200.00 and listed 
 below you'll see we managed to stay within our budget.
+
+##### Here's a breakdown of the item needed to build this project.
+1. A Raspberry Pi
+2. USB Webcam
+3. A MicroUSB AC adapter
+4. A Case for Raspberry Pi 
+5. HDMI Cable
+6. A MicroSD Card (8GB or higher)
+7. ~~Keyboard/Mouse Combo (USB or bluetooth)~~
+8. ~~A monitor~~
+
+##### The list of PCB components needed to build the PCB
+- 2x20 Header Female (Qty: 1) $3.73
+- 100nF Capacitor (Qty: 4) $5.80
+- 10uF Capacitor (Qty: 1) $1.45
+- 1kΩ Resistor (Qty: 1) $0.15
+- 3.9kΩ Resistor (Qty: 4) $2.40
+- 4.7kΩ Resistor (Qty: 3) $1.35
+- 3mm LED (Qty: 1)  $0.61 
+- N-Channel Logic Level MOSFET (Qty: 1) $0.99
+
 				
 ### 3.1.3 Time Commitment
 ---------------
