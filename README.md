@@ -449,7 +449,7 @@ component is working. The webcam can be tested by taking screen shots and checki
 output file to see if the webcam is able to see anything.
 		
 ### 2.3.9 Project Reproducible ?
----------------------
+
 Yes, I believe once following these build instructions one can easily reproduce this project 
 in a matter of a week’s time. 
 		
