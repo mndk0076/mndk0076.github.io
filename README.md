@@ -3,9 +3,9 @@ csl: apa.csl
 bibliography: PLFCitations.bib
 ---
 
- 
+###### Revision date: 17th, Mar 2017
 
- Prototype Lab Flow Project
+Prototype Lab Flow Project
 ==========================
 
 Projects website: <https://mndk0076.github.io/>
@@ -18,9 +18,8 @@ Approved Proposal
 -----------------
 *Proposal for the Prototype Lab Flow Project*
 
-Prepared by Kenneth Mendoza, Sukhdeep Sehra, Matheus Rondinelli and Gurpreet
-Jhita  
-*Computer Engineering Technology Student*  
+Prepared by Kenneth Mendoza, Sukhdeep Sehra, Matheus Rondinelli and Gurpreet Jhita 
+*Computer Engineering Technology Students*  
 <https://mndk0076.github.io/>
 
 
@@ -32,20 +31,15 @@ Background
 ----------
 Currently, we students have no way of booking time slots or requesting items from the prototype lab through a convenient application. Students have to go personally to the prototype lab and book the time or hope the item required is available. As a team, we feel like this is an inconvenient experience for the students and feel like an automated system would help to improve the current system by making it more efficient and more appealing to the student. Students would be able to book times slots and request items through the application and they would also be able to cancel requested time slots or items, freeing the space or item for another student and without having to go through the lab personally. That would also improve the time management of the staff, since they will not have to manage the times by themselves while having to work and help other students present in the prototype lab.
 
-We have searched for prior art via Humber’s IEEE subscription selecting “My
-Subscribed Content” and have found and read which provides insight into
-similar efforts.
+We have searched for prior art via Humber’s IEEE subscription selecting “My Subscribed Content” and have found and read which provides insight into similar efforts.
 
 The first article discusses how Gabor used QR decomposition for image encoding.
 
-The second article discusses how support system for QR codes based educational
-processes.
+The second article discusses how support system for QR codes based educational processes.
 
-The third article discusses how VLSI implementation of hybrid QR code generation
-system.
+The third article discusses how VLSI implementation of hybrid QR code generation system.
 
-In the Computer Engineering Technology program we have learned about the
-following topics from the respective relevant courses:
+In the Computer Engineering Technology program we have learned about the following topics from the respective relevant courses:
 
 -   Java Docs from CENG 212 Programming Techniques In Java,
 
@@ -62,40 +56,26 @@ following topics from the respective relevant courses:
 
 -   Wireless protocols such as 802.11 from TECH152 Telecom Networks.
 
-This knowledge and skill set will enable me to build the subsystems and
-integrate them together as my capstone project.
+This knowledge and skill set will enable me to build the subsystems and integrate them together as my capstone project.
 
 Methodology
 -----------
 
-This proposal is assigned in the first week of class and is due at the beginning
-of class in the second week of the fall semester. My coursework will focus on
-the first two of the 3 phases of this project:  
+This proposal is assigned in the first week of class and is due at the beginning of class in the second week of the fall semester. My coursework will focus on the first two of the 3 phases of this project:  
 Phase 1 Hardware build.  
 Phase 2 System integration.  
 Phase 3 Demonstration to future employers.
 
 *Phase 1 Hardware build*
-
-The hardware build will be completed in the fall term. It will fit within the
-CENG Project maximum dimensions of 12 13/16" x 6" x 2 7/8" (32.5cm x 15.25cm x
-7.25cm) which represents the space below the tray in the parts kit. The highest
-AC voltage that will be used is 16Vrms from a wall adaptor from which +/- 15V or
-as high as 45 VDC can be obtained. Maximum power consumption will be 20 Watts.
+The hardware build will be completed in the fall term. It will fit within the CENG Project maximum dimensions of 12 13/16" x 6" x 2 7/8" (32.5cm x 15.25cm x 7.25cm) which represents the space below the tray in the parts kit. The highest AC voltage that will be used is 16Vrms from a wall adaptor from which +/- 15V or as high as 45 VDC can be obtained. Maximum power consumption will be 20 Watts.
 
 *Phase 2 System integration*
-
 The system integration will be completed in the fall term.
 
 *Phase 3 Demonstration to future employers*
+This project will showcase the knowledge and skills that I have learned to potential employers.
 
-This project will showcase the knowledge and skills that I have learned to
-potential employers.
-
-The tables below provide rough effort and non-labour estimates respectively for
-each phase. A Gantt chart will be added by week 3 to provide more project
-schedule details and a more complete budget will be added by week 4. It is
-important to start tasks as soon as possible to be able to meet deadlines.
+The tables below provide rough effort and non-labour estimates respectively for each phase. A Gantt chart will be added by week 3 to provide more project schedule details and a more complete budget will be added by week 4. It is important to start tasks as soon as possible to be able to meet deadlines.
 
 | **Labour Estimates**                                                                                                                                                                                                                                                                                                                  | **Hrs**        | **Notes**                                                                                                                      |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------|--------------------------------------------------------------------------------------------------------------------------------|
@@ -156,11 +136,7 @@ important to start tasks as soon as possible to be able to meet deadlines.
 
 Concluding Remarks
 ------------------
-
-This proposal presents a plan for providing an IoT solution for *Future Humber
-PrototypeLab Flow*. This is an opportunity to integrate the knowledge and skills
-developed in our program to create a collaborative IoT capstone project
-demonstrating my ability to learn how to support projects. I request approval of this project.
+This proposal presents a plan for providing an IoT solution for *Future Humber PrototypeLab Flow*. This is an opportunity to integrate the knowledge and skills developed in our program to create a collaborative IoT capstone project demonstrating my ability to learn how to support projects. I request approval of this project.
 
 Abstract
 --------
@@ -533,6 +509,8 @@ Congratulations! You've just implemented the full QR Code scanner program. We ho
 
 ### 3.3 Administrator Website Development
 -----------------------------------------
+
+# 4. Conclusion
 
 # 5. Recommendations
 
