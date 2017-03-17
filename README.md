@@ -221,7 +221,11 @@ Table of Contents
       
       - [3.1.6 Unit Testing](#316-unit-testing)
       
-      - [3.1.7 Scanning QR Codes](#317-scanning-qr-codes)      
+      - [3.1.7 Scanning QR Codes](#317-scanning-qr-codes)
+    
+    + [3.2 Application Development](#32-application-development)
+    
+    + [3.3 Administrator Website Development](#33-administrator-website-development)
 
 3.  [Conclusion](#3-conclusion)
 
@@ -525,11 +529,10 @@ You should now have the program working. The program scans QR code and then blin
 Congratulations! You've just implemented the full QR Code scanner program. We hope you were able to reproduce this project following these instructions.
 
 ### 3.2 Application Development
-===============================
-### 3.3 Administrator Website Development
-=========================================
+-------------------------------
 
-# 4. Conclusion
+### 3.3 Administrator Website Development
+-----------------------------------------
 
 # 5. Recommendations
 
