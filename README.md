@@ -219,7 +219,7 @@ The objective of our project is to develop a better method for requesting time s
 # 2. Project Description
 
 ## 2.1 Product Introduction
----------------------------
+
 ### 2.1.1 Purpose
 -----------------
 The main goal of our project is to simplify the process of requesting items and booking time slots at the Humber Prototype Lab. Up until now, students have no control on whether there are any items available (or any time slots to fill up) at the lab. And the lab administrators have no way of booking time slots and sometimes have to deal with high traffic of students, without any real control. We feel like the system is outdated and needs to be updated for the fast-paced world of today. Therefore, we are developing the  Lab Flow project, which is an mobile application that aims to speed up this process by allowing students to book time slots through their mobile devices as well as providing more control to the lab administrators, effectively increasing the time efficiency and organization of the lab.
@@ -298,7 +298,7 @@ will be in charge of the application.
 ## 3. Build Instructions
 
 ## 3.1 Hardware Production
--------------------------
+
 ### 3.1.1 System Diagram
 -------------------------
 The webcam will be used to scan ID barcodes and item QR codes to register the parts with students. The codes will then be processed by the raspberry pi. Once everything is processed the Pi will upload the info to the database which can then be accessed through a mobile app for a better visual experience.
