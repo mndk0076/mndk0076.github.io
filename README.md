@@ -207,17 +207,17 @@ Table of Contents
 
 3.  [Build Instructions](#3-build-instructions)
       
-   + [3.1 Hardware Production](#31-hardware-production)
+    + [3.1 Hardware Production](#31-hardware-production)
 
-     - [3.1.1 System Diagram](#311-system-diagram)
+      - [3.1.1 System Diagram](#311-system-diagram)
 
       - [3.1.2 Build Budget](#312-build-budget)
 
-     - [3.1.3 Time Commitment](#313-time-commitment)
+      - [3.1.3 Time Commitment](#313-time-commitment)
 
-     - [3.1.4 PCB Soldering](#314-pcb-soldering)
+      - [3.1.4 PCB Soldering](#314-pcb-soldering)
      
-     - [3.1.5 Mechanical Assembly & Power Up](#315-mechanical-assembly--power-up)
+      - [3.1.5 Mechanical Assembly & Power Up](#315-mechanical-assembly--power-up)
       
       - [3.1.6 Unit Testing](#316-unit-testing)
       
