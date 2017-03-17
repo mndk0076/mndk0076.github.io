@@ -304,9 +304,9 @@ The webcam will be used to scan ID barcodes and item QR codes to register the pa
 ![systemdiagram](https://gurpreetjhita.github.io/Build-Log/SystemDiagram.png)
 
 *Image 1: System Diagram shows how the different components work*
-========================
-		
+
 ### 3.1.2 Build Budget
+-------------------------
 Before we start building something, we need to plan a budget. A budget will be especially helpful in managing the financial costs related to our build. 
 
 ##### Here's a breakdown of the item needed to build this project.
@@ -356,9 +356,9 @@ Here's a table that shows all the items we bought and how much we paid for them.
 
 Our final build cost totaled to about approximately $300 (That's including taxes and other expenses like shipping and handling).
 
-======================
 				
 ### 3.1.3 Time Commitment
+-------------------------
 Time is a resource arguably as valuable as money. And this project demands plenty of it. 
 
 We had almost 15 weeks to work this project however with these detailed instructions we will be cutting that time significantly for anyone wanting to recreate this project. Majority of our time was spent in implementing the QR scanning functionality and blinking the L.E.D. for feedback. It was our first time soldering and we were able to solder the PCB in less than an hour. 
@@ -381,9 +381,10 @@ If you already have acquired all the parts and got the PCB printed, we believe t
 
 *Table2: Displays time required to for each task*
 
-=========================
+
 
 ### 3.1.4 PCB Soldering
+-----------------------
 Time to start building the PCB! However, you build something, you must design it first. That's where these files come in handy. Go ahead and download these files.
 
 | Board File | Schematic File |
@@ -408,9 +409,9 @@ Now the PCB is ready to be soldered. However, safety comes first. Make sure to w
 
 *Image 2: Finished soldered PCB*
 
-=========================
 		
 ### 3.1.5 Mechanical Assembly & Power Up
+----------------------------------------
 By now, you have acquired all the parts you are ready to start doing mechanical assembly. It's extremely easy from here onwards since this guide a shortchut to the finishline. 
 
 You should now have the following: a Raspberry Pi, a USB Webcam, a MicroUSB power source and A MicroSD Card (8GB or higher). The starter kit's MicroSD card comes with pre-loaded Raspbian.iso so all you have to do is install it. If it does not then it can be downloaded from the Raspberry Pi website and copied on the MicroSD via a card reader (also included in the starter kit). Insert the flash card into Raspberry Pi.
@@ -419,9 +420,10 @@ Begin by connecting power, HDMI and a keyboard and mouse and the USB Webcam to t
 
 That's it for the assembly.
 
-=========================
+
 
 ### 3.1.6 Unit Testing
+----------------------
 #### Webcam functionality testing
 For testing, start by installing the fswebcam library by typing **sudo apt-get install fswebcam**. Then type fswebcam followed by a filename with .jpg extension. For example, **fswebcam image.jpg**. This will snap a picture and save it the current directory with the filename image.jpg. If this works, that means the USB Webcam functions properly.
 
@@ -434,9 +436,10 @@ To test the PCB, run the traffic2B.c (source code available **-->** [here](https
 
 This should start blinking the L.E.D's in a traffic light pattern for an endless loop. Use **Ctrl+C** to exit the program. If this works, this means the PCB is ready to be used.
 
-=========================
+
 
 ### 3.1.7 Scanning QR Codes
+---------------------------
 You can generate your own QR Codes ---> [here](http://www.qr-code-generator.com/), or any other website of your choosing. If you are using a service that allows you to set the pixel count of the QR code, we recommend setting it to the minimum as it's faster and can be handled by webcams with lower resolution. 
 
 #### Now we install the zbar library to scan QR codes. Follow these steps below:
