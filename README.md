@@ -295,7 +295,7 @@ will have access to the database, since it needs its information to display it
 back to the user and it will support English and French. Matheus and Kenneth
 will be in charge of the application.
 
-## 3.1 Build Instructions
+## 3. Build Instructions
 -------------------------
 ## 3.1 Hardware Production
 ### 3.1.1 System Diagram
