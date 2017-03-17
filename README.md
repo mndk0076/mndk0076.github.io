@@ -205,9 +205,9 @@ Table of Contents
 
       + [2.2.4 Application](#224-application)
 
-3.  [Hardware Production](#3-hardware-production)
+3.  [Build Instructions](#3-build-instructions)
       
-   + [3.1 Build Instructions](#31-build-instructions)
+   + [3.1 Hardware Production](#31-hardware-production)
 
      - [3.1.1 System Diagram](#311-system-diagram)
 
@@ -221,10 +221,7 @@ Table of Contents
       
       - [3.1.6 Unit Testing](#316-unit-testing)
       
-      - [3.1.7 Scanning QR Codes](#317-scanning-qr-codes)
-
-      - [3.1.8 Project Reproduciblility](#318-project-reproduciblility)
-      
+      - [3.1.7 Scanning QR Codes](#317-scanning-qr-codes)      
 
 3.  [Conclusion](#3-conclusion)
 
@@ -363,18 +360,18 @@ A case is highly recommended as the raspberry pi is relatively fragile microcomp
 
 Moving on, a webcam will be required to scan QR codes. Any USB webcam will do fine. So no need a spend the extra bucks for a high definition webcam. An average webcam will cost between $20 and $35. Or even cheaper if you find a used/refurbished one.
 
-Finally, there is cost associated with the fabricating of a PCB (Printed Circuit board) as well it's components. The Prototype Lab at Humber College charges about $40 to print a PCB. The components we have on my PCB cost about $42.52. However, we do a have a bunch of extra components like sensors and headers that you don't need. This is why is we have them crossed out on the list. Morever, this brings the cost down from $42.52 to $16.49. The actual cost might still be higher since not all components are sold in the quantitiy of single units. As Humber students, all of this is covered as part of our tuition fees. 
+Finally, there is cost associated with the fabricating of a PCB (Printed Circuit board) as well it's components. The Prototype Lab at Humber College charges about $40 to print a PCB. The components we have on my PCB cost about $42.52. However, we do a have a bunch of extra components like sensors and headers that you don't need. Therefore, we have them crossed out on the list. Moreover, this brings the cost down from $42.52 to $16.49. The actual cost might still be higher since not all components are sold in the quantity of single units. As Humber students, all of this is covered as part of our tuition fees. 
 
-Altogether we spent about $100 on the Raspberry Pi starter kit from Amazon. If you buy an older Raspberry Pi, you have to spend extra on a USB wifi receiver or use the ethernet instead. We used my older webcam which we bought for about $35-$40 at the time. And we didn't have to pay extra for the PCB since we're Humber students as well as the PCB components. We're not including a monitor, and a keyboard and a mouse since almost eveybody owns at least one of each. If not then you can buy any monitor with an HDMI and any USB or bluetooth keyboard/mouse combo.
+Altogether we spent about $100 on the Raspberry Pi starter kit from Amazon. If you buy an older Raspberry Pi, you have to spend extra on a USB wifi receiver or use the ethernet instead. We used my older webcam which we bought for about $35-$40 at the time. And we didn't have to pay extra for the PCB since we're Humber students as well as the PCB components. We're not including a monitor, and a keyboard and a mouse since almost everybody owns at least one of each. If not then you can buy any monitor with an HDMI and any USB or Bluetooth keyboard/mouse combo.
 
-Here's a table thats shows all the items we bought and how much we paid for them. Note all prices are in CAD. We're also including the PCB fabricating cost to create a reference for you to compare total costs.
+Here's a table that shows all the items we bought and how much we paid for them. Note all prices are in CAD. We're also including the PCB fabricating cost to create a reference for you to compare total costs.
 
 | Item                               | Cost   |
 |------------------------------------|--------|
-| Rasberry Pi 3 Starter Kit          | $99.99 |
+| Raspberry Pi 3 Starter Kit         | $99.99 |
 | USB Webcam		             | $34.99 |
 | PCB Fabrication Cost               | $40    |
-| Reqruired components for PCB       | $42.52 |
+| Required components for PCB        | $42.52 |
 |**Total**                           | **$245.78**|
 
 Our final build cost totaled to about approximately $300 (That's including taxes and other expenses like shipping and handling).
@@ -386,7 +383,7 @@ Time is a resource arguably as valuable as money. And this project demands plent
 
 We had almost 15 weeks to work this project however with these detailed instructions we will be cutting that time significantly for anyone wanting to recreate this project. Majority of our time was spent in implementing the QR scanning functionality and blinking the L.E.D. for feedback. It was our first time soldering and we were able to solder the PCB in less than an hour. 
 
-If you already have acquired all the parts and got the PCB printed, we beleive this project can be completed in a day. That's if you copy paste the all the code and it runs flawlessly without any errors.
+If you already have acquired all the parts and got the PCB printed, we believe this project can be completed in a day. That's if you copy paste the all the code and it runs flawlessly without any errors.
 		
 ##### Work Schedule:
 
@@ -407,7 +404,7 @@ If you already have acquired all the parts and got the PCB printed, we beleive t
 =========================
 
 ### 3.1.4 PCB Soldering
-Time to start building the PCB! However you build something, you must design it first. That's where these files come in handy. Go ahead and download these files.
+Time to start building the PCB! However, you build something, you must design it first. That's where these files come in handy. Go ahead and download these files.
 
 | Board File | Schematic File |
 |---|---|
@@ -422,9 +419,9 @@ Now that you have these files, you'll need eagle to open them. Eagle can be down
 #### Schematic for the PCB
 ![Alt text](https://raw.githubusercontent.com/ssehra/ssehra.github.io/master/Build%20Log%20Files/Schematic.PNG)
 
-All of these files are used to instruct the machine with the coordinates and to engrave the PCB. It takes about 4-5 hours for the machine to print it. After it's done, wash with water *(preferably deionized water)* and wipe it a piece or cloth to avoid leaving water marks (I recommend using a micro-fiber cloth) and wait for it to dry completely. After that's done you can sand the PCB a bit just to make it shinier. If you do sand it you have the repeat the washing process again.
+These files are used to instruct the machine with the coordinates and to engrave the PCB. It takes about 4-5 hours for the machine to print it. After it's done, wash with water *(preferably deionized water)* and wipe it a piece of cloth to avoid leaving water marks (I recommend using a micro-fiber cloth) and wait for it to dry completely. After that's done you can sand the PCB a bit just to make it shinier. If you do sand it you have the repeat the washing process again.
 
-Now the PCB is ready to soldered. However safety comes first. Make sure to wear safety glasses and and dress appropriately for a lab/workplace environmnet. Now Use the schmatic as the guide and solder each of the components to their respective places and making sure that the excess solder is not causing a short. Now inspect each soldering carefully again use a voltmeter to test for continuity. If all goes well you are ready to move on to the next chapter.
+Now the PCB is ready to be soldered. However, safety comes first. Make sure to wear safety glasses and dress appropriately for a lab/workplace environment. Now Use the schematic as the guide and solder each of the components to their respective places and making sure that the excess solder is not causing a short. Now inspect each soldering carefully again use a voltmeter to test for continuity. If all goes well you are ready to move on to the next chapter.
 
 <br>			
 ![PCB](https://raw.githubusercontent.com/ssehra/ssehra.github.io/master/Build%20Log%20Files/PCB.png)
@@ -436,9 +433,9 @@ Now the PCB is ready to soldered. However safety comes first. Make sure to wear 
 ### 3.1.5 Mechanical Assembly & Power Up
 By now, you have acquired all the parts you are ready to start doing mechanical assembly. It's extremely easy from here onwards since this guide a shortchut to the finishline. 
 
-You should now have the following: a Raspberry Pi, a USB Webcam, a MicroUSB power source and A MicroSD Card (8GB or higher). The starter kit's MicroSD card comes with pre-loaded Raspbian.iso so all you have to do is install it. If it doens't then it can downloaded from the Raspberry Pi website and copied on the MicroSD via a card reader (also included in the starter kit). Insert the flash card into Raspberry Pi.
+You should now have the following: a Raspberry Pi, a USB Webcam, a MicroUSB power source and A MicroSD Card (8GB or higher). The starter kit's MicroSD card comes with pre-loaded Raspbian.iso so all you have to do is install it. If it does not then it can be downloaded from the Raspberry Pi website and copied on the MicroSD via a card reader (also included in the starter kit). Insert the flash card into Raspberry Pi.
 
-Begin by connecting power, HDMI and a keyboard and mouse and the USB Webcam to the Raspberry Pi. Also connect your PCB to  the Raspberry Pi. After it boots to the desktop, use **sudo apt-get update** on the commandline terminal to update the Raspbian to the latest version. Then use **sudo apt-get dist-upgrade** to upgrade all the installed packages. These commands require internet (ethernet or wifi) to download the updates.
+Begin by connecting power, HDMI and a keyboard and mouse and the USB Webcam to the Raspberry Pi. Also connect your PCB to  the Raspberry Pi. After it boots to the desktop, use **sudo apt-get update** on the command line terminal to update the Raspbian to the latest version. Then use **sudo apt-get dist-upgrade** to upgrade all the installed packages. These commands require internet (ethernet or wifi) to download the updates.
 
 That's it for the assembly.
 
@@ -446,12 +443,12 @@ That's it for the assembly.
 
 ### 3.1.6 Unit Testing
 #### Webcam functionality testing
-For testing, start by installing the fswebcam library by typing **sudo apt-get install fswebcam**. Then type fswebcam followed by a filename with .jpg extention. For example, **fswebcam image.jpg**. This will snap a picture and save it the current directory with the filename image.jpg. If this works, that means the USB Webcam functions properly.
+For testing, start by installing the fswebcam library by typing **sudo apt-get install fswebcam**. Then type fswebcam followed by a filename with .jpg extension. For example, **fswebcam image.jpg**. This will snap a picture and save it the current directory with the filename image.jpg. If this works, that means the USB Webcam functions properly.
 
 #### PCB functionality testing
-To test the PCB, run the the traffic2B.c (source code available **-->** [here](https://raw.githubusercontent.com/ssehra/ssehra.github.io/master/Build%20Log%20Files/traffic2B.c)) with the following steps.
+To test the PCB, run the traffic2B.c (source code available **-->** [here](https://raw.githubusercontent.com/ssehra/ssehra.github.io/master/Build%20Log%20Files/traffic2B.c)) with the following steps.
 
-1. Type **sudo apt-get install wiringPi** on the terminal to the the Pi Wiring Library
+1. Type **sudo apt-get install wiringPi** on the terminal to the Pi Wiring Library
 2. Compile the file using **gcc -Wall -o traffic2B traffic2B.c -lwiringPi** (this creates an execuatalbe object called traffic2B)
 3. Run the file using **sudo ./traffic2B**
 
@@ -460,20 +457,20 @@ This should start blinking the L.E.D's in a traffic light pattern for an endless
 =========================
 
 ### 3.1.7 Scanning QR Codes
-You can generate your own QR Codes ---> [here](http://www.qr-code-generator.com/), or any other website of your choosing. If you are using a service thats allows you to set the pixel count of the QR code, we recommend setting it to the minimum as it's faster and can be handled by webcams with lower resolution. 
+You can generate your own QR Codes ---> [here](http://www.qr-code-generator.com/), or any other website of your choosing. If you are using a service that allows you to set the pixel count of the QR code, we recommend setting it to the minimum as it's faster and can be handled by webcams with lower resolution. 
 
-#### Now we install the zbar library to scan QR codes. Follow these step below:
+#### Now we install the zbar library to scan QR codes. Follow these steps below:
 1. Type **sudo apt-get install zbar-tools** on the terminal
 2. Use **ls /dev/video*/** to find your video source
 3. Test by scanning a QR code by typing **zbarcam /dev/video#** on the terminal. (Note: the pound sign "#" is not literal value, it's supposed to represent the number that step 2 returns returns).
 
-Your webcam should now be working so go ahead and scan a QR code. You should now see the value of QR Code on the terminal saying preceeded by the string "QR Code:". You can scan as many QR codes as you'd like. Use **Ctrl+C** to exit the program.
+Your webcam should now be working so go ahead and scan a QR code. You should now see the value of QR Code on the terminal saying preceded by the string "QR Code:". You can scan as many QR codes as you'd like. Use **Ctrl+C** to exit the program.
 
 The QR Code scanner has been implemented. 
 
-Nope. You're still not done yet. You need to add the caplibity to blink the L.E.D as well as save the results into a file for external use (ex: storing information into a database). Keep reading to find out how you add these.
+Nope. You're still not done yet. You need to add the capability to blink the L.E.D as well as save the results into a file for external use (ex: storing information into a database). Keep reading to find out how you add these.
 
-#### Run the follwing code to Scan QR Codes to implement the QR code scanner
+#### Run the following code to Scan QR Codes to implement the QR code scanner
 | Shell Script | Python Blink | greenLight.c |
 |---|---|---|
 |[scanqr.sh](https://raw.githubusercontent.com/ssehra/ssehra.github.io/master/Build%20Log%20Files/scanqr.sh)|[alertLight.py](https://raw.githubusercontent.com/ssehra/ssehra.github.io/master/Build%20Log%20Files/alertLight.py)|[greenLight.c](https://raw.githubusercontent.com/ssehra/ssehra.github.io/master/Build%20Log%20Files/greenLight.c)
@@ -490,7 +487,7 @@ def blink(pin):
         return
 ```
 
-Moreover you can also change the number of cyles for how many times this led on/off will be repeated. Simply change the loop count by changing 11 to any value you desire.
+Moreover, you can also change the number of cycles for how many times this led on/off will be repeated. Simply change the loop count by changing 11 to any value you desire.
 ```python
 for i in range(0,11):
 ```
@@ -499,13 +496,13 @@ When it's all done you test run this program by typing **python alert.py** on th
 
 The C file *greenLight.c* is just there to initiate the green light for use during the scanning process. It just blinks the led in green for 1/10th of the second. I recommend leaving it as is.
 
-The Shell Script file *scanqr.sh* is where the bulk of the program lies. It starts off by compiling and executing *greenLight.c*. Then it defines a few variables for storing information. Every session of script execution produces a file called "scan" followed by a timestamp and the .txt extention. You can change the output filename by editing the variable $ScanResult.
+The Shell Script file *scanqr.sh* is where the bulk of the program lies. It starts off by compiling and executing *greenLight.c*. Then it defines a few variables for storing information. Every session of script execution produces a file called "scan" followed by a timestamp and the .txt extension. You can change the output filename by editing the variable $ScanResult.
 ```bash
 # Name of scan results file
 ScanResult="$cwd/scan_$DATE.txt"
 ```
 
-The fuction *scan()* initiates zbarcam to scan QR codes and then kills the task after saving the output. It even asks the user to scan multiple entires. Since it's using zbarcam you apply modifications by using flags like *--prescale* to set the resolution of the scanning resolution. 
+The function *scan()* initiates zbarcam to scan QR codes and then kills the task after saving the output. It even asks the user to scan multiple entries. Since it's using zbarcam you apply modifications by using flags like *--prescale* to set the resolution of the scanning resolution. 
 ```bash
 function scan() {
   zbarcam --raw --prescale=320x240 /dev/video0 > $tmp &
@@ -516,23 +513,17 @@ function scan() {
   # Prompt to continue scanning
 }
 ```
-More inforation about the flags and their usages can be found --> [here](http://manpages.ubuntu.com/manpages/xenial/man1/zbarcam.1.html).
+More information about the flags and their usages can be found --> [here](http://manpages.ubuntu.com/manpages/xenial/man1/zbarcam.1.html).
 
 #### To run the final code follow these steps:
 1. Make sure all three core files: *greenLight.c*, *alertLight.py* and *scanqr.sh* are in the same directory.
 2. On the terminal, use **chmod 777** followed by the filenames and grant all Read-Write-Execute permissions to the core files.
 3. Type **./scanqr.sh** to execute the shell script.
 
-You should now have the program working. The program scans QR code and then blinks the L.E.D. as well showing the scanned item on the screen. After scanning an item it prompts to scan another. If you choose yes, it scans another item and prompts to scan more items. If you choose no, then the program exits and shows the list of items scanned during the session. According to our code, every session generates a new file with a timestamp. You can use one file and reuse if you want. Futhermore, you can press **Ctrl+C** anytime to exit the program.
+You should now have the program working. The program scans QR code and then blinks the L.E.D. as well showing the scanned item on the screen. After scanning an item it prompts to scan another. If you choose yes, it scans another item and prompts to scan more items. If you choose no, then the program exits and shows the list of items scanned during the session. According to our code, every session generates a new file with a timestamp. You can use one file and reuse if you want. Furthermore, you can press **Ctrl+C** anytime to exit the program.
 
-Congratulations! You've just implemented the full QR Code scanner program.
-
-=========================
-
-### 3.1.8 Project Reproduciblility
-Yes, we believe once following these build instructions one can easily reproduce this project in a matter of a week’s time. 
+Congratulations! You've just implemented the full QR Code scanner program. We hope you were able to reproduce this project following these instructions.
 		
-Click >> <a href="project files.zip" target="_self"><font color="#0d38e2"><u>download</u></font></a> for source files.		
 
 =========================
 
