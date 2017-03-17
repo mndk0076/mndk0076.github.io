@@ -523,9 +523,11 @@ More information about the flags and their usages can be found --> [here](http:/
 You should now have the program working. The program scans QR code and then blinks the L.E.D. as well showing the scanned item on the screen. After scanning an item it prompts to scan another. If you choose yes, it scans another item and prompts to scan more items. If you choose no, then the program exits and shows the list of items scanned during the session. According to our code, every session generates a new file with a timestamp. You can use one file and reuse if you want. Furthermore, you can press **Ctrl+C** anytime to exit the program.
 
 Congratulations! You've just implemented the full QR Code scanner program. We hope you were able to reproduce this project following these instructions.
-		
 
-=========================
+### 3.2 Application Development
+===============================
+### 3.3 Administrator Website Development
+=========================================
 
 # 4. Conclusion
 
