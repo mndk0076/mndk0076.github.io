@@ -211,6 +211,9 @@ Table of Contents
 
 List of Illustration/Diagrams
 -----------------------------
+- Image 1: System Diagram
+- Image 2: Technical Schematic of the PCB
+- Image 3: Completed PCB
 
 # 1. Introduction
 
@@ -398,6 +401,7 @@ Now that you have these files, you'll need eagle to open them. Eagle can be down
 
 #### Schematic for the PCB
 ![Alt text](https://raw.githubusercontent.com/ssehra/ssehra.github.io/master/Build%20Log%20Files/Schematic.PNG)
+*Image 2: Technical Schematic of the PCB*
 
 These files are used to instruct the machine with the coordinates and to engrave the PCB. It takes about 4-5 hours for the machine to print it. After it's done, wash with water *(preferably deionized water)* and wipe it a piece of cloth to avoid leaving water marks (I recommend using a micro-fiber cloth) and wait for it to dry completely. After that's done you can sand the PCB a bit just to make it shinier. If you do sand it you have the repeat the washing process again.
 
@@ -405,7 +409,7 @@ Now the PCB is ready to be soldered. However, safety comes first. Make sure to w
 		
 ![PCB](https://raw.githubusercontent.com/ssehra/ssehra.github.io/master/Build%20Log%20Files/PCB.png)
 
-*Image 2: Finished soldered PCB*
+*Image 3: Completed PCB*
 		
 ### 3.1.5 Mechanical Assembly & Power Up
 ----------------------------------------
