@@ -317,8 +317,7 @@ will be in charge of the application.
 
 ## 3.1 Build Instructions
 -------------------------
-### 3.1 Hardware Production
----------------------------
+## 3.1 Hardware Production
 ### 3.1.1 System Diagram
 The webcam will be used to scan ID barcodes and item QR codes to register the parts with students. The codes will then be processed by the raspberry pi. Once everything is processed the Pi will upload the info to the database which can then be accessed through a mobile app for a better visual experience.
 			
