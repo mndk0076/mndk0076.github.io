@@ -311,7 +311,8 @@ Here's a table that shows all the items we bought and how much we paid for them.
 | USB Webcam		             | $34.99 |
 | PCB Fabrication Cost               | $40    |
 | Required components for PCB        | $42.52 |
-|**Total**                           | **$245.78**|
+| Raspberry Pi Case Construction     | $33.89 |
+|**Total**                           | **$284.08**|
 
 Our final build cost totaled to about approximately $300 (That's including taxes and other expenses like shipping and handling).
 				
