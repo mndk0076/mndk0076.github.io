@@ -216,7 +216,7 @@ List of Illustration/Diagrams
 
 # 1. Introduction
 
-The objective of our project is to develop a better method for requesting time slots in the Prototype Lab. Currently the Prototype lab doesnt have a very good method for requesting time slots and booking out equipment, they currently use a clipboard method. Using the skills we learned throughout the last 5 semesters, we’re going to make the experience for the students a more efficient one, by being able to book time in the Prototype Lab off a mobile application and also add more functionality which also makes the experience better. The types of additional functionality will include being able to book, cancel and reschedule time slots, being able to also request tools and parts that are only available in the Prototype Lab as rental equipment. Students will use the web application to book time slots in the Prototype Lab. Our application will also work in conjunction with a QR code scanning device.  As an addition to making the experience better for the students, we are also working on a webpage for the administrator, allowing them to manage time slots and collect specific data. This Technical report will illistrate the work involved in bringing our vision to life.
+The objective of our project is to develop a better method for requesting time slots in the Prototype Lab. Currently the Prototype lab does'nt have a very good method for requesting time slots and booking out equipment, they currently use a clipboard method. Using the skills we learned throughout the last 5 semesters, we’re going to make the experience for the students a more efficient one, by being able to book time in the Prototype Lab off a mobile application and also add more functionality which also makes the experience better. The types of additional functionality will include being able to book, cancel and reschedule time slots, being able to also request tools and parts that are only available in the Prototype Lab as rental equipment. Students will use the web application to book time slots in the Prototype Lab. Our application will also work in conjunction with a QR code scanning device.  As an addition to making the experience better for the students, we are also working on a webpage for the administrator, allowing them to manage time slots and collect specific data. This Technical report will illistrate the work involved in bringing our vision to life.
 
 # 2. Project Description
 
@@ -238,64 +238,19 @@ We will be using a Raspberry Pi 3, a digital camera and a monitor. These three c
 
 ### 2.2.1 Database
 ------------------
-Our main goal with the database is to make it store the user’s information,
-mainly user’s student number so that it can be assigned to the corresponding
-item or time. It will also have all items available in the prototype lab, such
-as raspberry pi and ardoino so that students may be able to request them. The
-main function of the database will be to store the time slots that users will be
-able to reserve in order to use the prototype lab. Once the time is reserved by
-a student, its student number will get assigned to that time slot and will not
-be able to be requested by any other student. In order to cancel the time
-reservation the student will have to do so 24 hours prior to the time reserved.
-By accessing the student information stored in the database, we will also be
-able to limit access to the prototype lab as requested by Kelly. The access
-limit will be done as requested by the prototype lab, and will be done by group
-such as computer engineering, electrical, design and we will be able to restrict
-a day or a certain amount of time to that specific group. We will be using MySQL
-to create the database and hostinger, which is a free hosting website. Kenneth
-will be in charge of the database.
+Our main goal with the database is to make it store the user’s information, mainly user’s student number so that it can be assigned to the corresponding item or time. It will also have all items available in the prototype lab, such as raspberry pi and ardoino so that students may be able to request them. The main function of the database will be to store the time slots that users will be able to reserve in order to use the prototype lab. Once the time is reserved by a student, its student number will get assigned to that time slot and will not be able to be requested by any other student. In order to cancel the time reservation the student will have to do so 24 hours prior to the time reserved. By accessing the student information stored in the database, we will also be able to limit access to the prototype lab as requested by Kelly. The access limit will be done as requested by the prototype lab, and will be done by group such as computer engineering, electrical, design and we will be able to restrict a day or a certain amount of time to that specific group. We will be using MySQL to create the database and hostinger, which is a free hosting website. Kenneth will be in charge of the database.
 
 ### 2.2.2 Web Interface
 -----------------------
-Our web application is going to allow the student to register and/or log in to
-his account. The application will allow students to book a time through the web
-page and also check history of items or booked time slots in the past. The admin
-will have access to the student’s information and to the info graphs just as in
-the app. Development of the website will rely heavily on how well we are doing
-with the application. The more progress we can achieve on it the more time we
-will have to develop the website and add more functionalities to it. Sukhdeep
-and Gurpreet will be in charge of the web page.
+Our web application is going to allow the student to register and/or log in to his account. The application will allow students to book a time through the web page and also check history of items or booked time slots in the past. The admin will have access to the student’s information and to the info graphs just as in the app. Development of the website will rely heavily on how well we are doing with the application. The more progress we can achieve on it the more time we will have to develop the website and add more functionalities to it. Gurpreet will be in charge of the web page. Meanwhile, Sukhdeep will be working the hardware.
 
 ### 2.2.3 Hardware
 ------------------
-Our hardware will be a scanning device used to check-in to the prototype lab. 
-The database will be linked to our scanning device which will allow the student to 
-check-in by just scanning their student id. If the student arrives too early the system 
-will not allow the student to check-in until the time slot is available. If the student 
-does not register for a time slot through the application the device will not allow the 
-student to check-in and will request the student to register into the next available time slot.
+Our hardware will be a scanning device used to check-in to the prototype lab. The database will be linked to our scanning device which will allow the student to check-in by just scanning their student id. If the student arrives too early the system will not allow the student to check-in until the time slot is available. If the student does not register for a time slot through the application the device will not allow the student to check-in and will request the student to register into the next available time slot.
 
 ### 2.2.4 Application
 ---------------------
-Our application will allow the user to register and by doing so adding himself
-to our database. Once registered, the student will be able to access the other
-classes and request time slots and items from the prototype lab. He will also be
-able to see all the time slots available and the ones already taken, he will
-also be able to see if certain time period or day is reserved to certain group.
-Once an item or time is requested by student, it will be displayed on his
-account info. There will be two types of account in our application. The first
-will be the student account and the second will be an admin account. The admin
-will have access to all the classes in the app without any restriction and will
-be able to see what students have requested, when and the student’s information.
-One of the classes will be the statistics, where the admin will be able to see
-graphs with all the relevant information such as what are the times that are
-booked the most, by what group of students and the items that are requested the
-most. The admin will also be able to cancel a time reservation or item request
-from a student if necessary and update the student’s info page with the reasons
-why time or item reservation had to be cancelled or denied. Most of the classes
-will have access to the database, since it needs its information to display it
-back to the user and it will support English and French. Matheus and Kenneth
-will be in charge of the application.
+Our application will allow the user to register and by doing so adding himself to our database. Once registered, the student will be able to access the other classes and request time slots and items from the prototype lab. He will also be able to see all the time slots available and the ones already taken, he will also be able to see if certain time period or day is reserved to certain group. Once an item or time is requested by student, it will be displayed on his account info. There will be two types of account in our application. The first will be the student account and the second will be an admin account. The admin will have access to all the classes in the app without any restriction and will be able to see what students have requested, when and the student’s information. One of the classes will be the statistics, where the admin will be able to see graphs with all the relevant information such as what are the times that are booked the most, by what group of students and the items that are requested the most. The admin will also be able to cancel a time reservation or item request from a student if necessary and update the student’s info page with the reasons why time or item reservation had to be cancelled or denied. Most of the classes will have access to the database, since it needs its information to display it back to the user and it will support English and French. Matheus and Kenneth will be in charge of the application.
 
 ## 3. Build Instructions
 
