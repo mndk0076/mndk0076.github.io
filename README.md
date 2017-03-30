@@ -393,7 +393,7 @@ To test the PCB, run the traffic2B.c (source code available **-->** [here](https
 This should start blinking the L.E.D's in a traffic light pattern for an endless loop. Use **Ctrl+C** to exit the program. If this works, this means the PCB is ready to be used.
 
 #### Application and Database testing
-#####Test case:001
+Test case:001
 
 Test Scenario: Login test with good credentials
 
