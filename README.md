@@ -394,121 +394,209 @@ This should start blinking the L.E.D's in a traffic light pattern for an endless
 
 ### Application and Database testing
 Test case:001
+
 Test Scenario: Login test with good credentials
+
 Purpose: Test will output the results of entering correct login credentials
+
 Step Details: Start application and enter "testuser" as the username, then enter "123" for the password and press the login button.
+
 Expected Results: Accepts the user credentials and logs in with the test account.
+
 Actual Results: As expected
 
 Test case:002
+
 Test Scenario:Login test with bad credentials
+
 Purpose: Test will output the results of entering incorrect login credentials
+
 Preconditions: Clean installation of the application, Wi-Fi and data turned on.
+
 Step Details: Start application and enter "testcase002" for username and "123" for password and press login.
+
 Expected Results:The application will return a dialog box to the user, informing the user that the credentials are not valid and page data will flush
+
 Actual Results: As expected
 
 Test case:003
+
 Test Scenario: Checking in the remember me box, so that it remembers user and password info
+
 Purpose: This test will see if the checkbox remembers the user information when checked
+
 Preconditions: Clean installation of the application, Wi-Fi and data turned on.
+
 Step Details: Start application, enter the test credentials, check the remember me box and log in. Re-open application and check that the credentials were saved.
+
 Expected Results:User credentials should be remembered already and ready to user to simply press log in without having to re-enter credentials
+
 Actual Results: As expected
 
 Test Case:004
+
 Test Scenario: User does not check the “Remember me” box upon entering his credentials
+
 Purpose: To test if without the checkbox “Remember me” checked, application will still save the credentials
+
 Preconditions: Clean installation of the application, Wi-Fi and data turned on.
+
 Step Details: Start application, enter test credentials and log in without checking the remember me box. Re-open application and credentials should not have been saved.
+
 Expected Results: Credentials should not be saved since checkbox was not checked
+
 Actual Results: As expected
 
 Test Case:005
+
 Test Scenario: Scanning QR code with “deny” on camera permission for scanner
+
 Purpose: To test if the application gives an error message since the camera does not have permissions to work with the app
+
 Preconditions: Clean installation of the application, Wi-Fi and data turned on.
+
 Step Details: Start Application, log in with test account and on the main menu, select scan QR code
+
 Expected Results:Gives an error message back since it does not have permission to use the camera from the cell phone.
+
 Actual Results: As expected
 
 Test Case:006
+
 Test Scenario: Scanning QR code with permission to use camera
+
 Purpose: Test if the app is able to utilize the phone’s camera
+
 Preconditions: Clean installation of the application, Wi-Fi and data turned on.
+
 Step Details: Start application, log in with test account and select Scan QR codes from the menu.
+
 Expected Results: Opens the camera and prompts user to display QR code to the camera
+
 Actual Results: As expected
 
 Test Case:007
+
 Test Scenario: User confirmation to exit the app
+
 Purpose: To test if upon pressing the exit button, the app should prompt the user if he really wants to exit it.
+
 Preconditions: Clean installation of the application, Wi-Fi and data turned on.
+
 Step Details: Start application and click on the exit button and then click on "yes" on the prompt window
+
 Expected Results: Should exit the application without any issues
+
 Actual Results: As expected
 
 Test Case:008
+
 Test Scenario: Clicking on exit and on “NO” on the prompt window
+
 Purpose: To check if the program cancels the exit once NO is clicked
+
 Preconditions: Clean installation of the application, Wi-Fi and data turned on.
+
 Step Details: Start application, click on the exit buttom and then click "No" on the prompt window
+
 Expected Results: Should cancel the exit process and not exit the program.
+
 Actual Results: As expected
 
 Test Case:009
+
 Test Scenario: Scheduling date and time
+
 Purpose: To check if the scheduling tab is working as intended.
+
 Preconditions: Clean installation of the application, Wi-Fi and data turned on.
+
 Step Details: Start application, log in with test account and click on "Schedule". Select date March 5, 2017 and select time 4pm. Click on the schedule button.
+
 Expected Results: A date and a time were selected therefore app schedules it and it gets stored into the database.If a date or a time are not selected the application will not schedule it or send any of the information to the database.
+
 Actual Results: As expected
 
 Test Case:010
+
 Test Scenario: Check functionality of request item
+
 Purpose: To check if the request item tab and buttons are working as intended.
+
 Preconditions: Clean installation of the application, Wi-Fi and data turned on.
+
 Step Details: Start application, log in with test account. Once logged in click on request item and then select the item and the amount required and click on the "resquest item" button.
+
 Expected Results: Request Item tab should open allowing the user to select the amount and what item user wants, the item then is requested and assigned to that user in the database
+
 Actual Results: As expected
 
 Test Case:011
+
 Test Scenario: User clicks on “My account” on menu
+
 Purpose: To check if it is displaying proper user info
-Preconditions: Clean installation of the application, Wi-Fi and data turned on. 
+
+Preconditions: Clean installation of the application, Wi-Fi and data turned on.
+
 Step Details: Start application, logs in with test account or an user created account and click on "my account" on the menu.
+
 Expected Results: Display student complete name, username and student number and also time slots or items requested.
+
 Actual Results: As expected
 
 Test Case:012
+
 Test Scenario: User requests item and sets a date
+
 Purpose: To check if the item and date info are being added to the right student in the database
+
 Step Details: Start application, log in with test account or created account and click on "Request Items", request any items and any amount of them and then return to the main menu. Once in the main menu click on "Schedule" and select a date and time.
+
 Expected Results:User will be able to request the items and any amount of them required and then he will be able to request time slots and all the information should be stored properly in the database.
+
 Actual Results: As Expected
 
 Test Case:013
+
 Test Scenario: User tries to scan a barcode with the QR scanner
+
 Purpose: To test that it does not scan the bar code since it is set to scan only the QR
+
 Preconditions: Clean installation of the application, Wi-Fi and data turned on.
+
 Step Details: Start application, log in with test account or created account and on the main menu click on "scan QR code". Once the camera opens, try to scan a bar code instead of a QR code.
+
 Expected Results: Application is going to open the camera and try to scan the QR code but it is not going to scan anything since the displayed code is a barcode
+
 Actual Results: As expected
 
 Test Case:014
+
 Test Scenario: User tries to create account with user name that already exists
+
 Purpose:  Make sure user can not create an account with an account name that has already been used
+
 Preconditions: Clean installation of the application, Wi-Fi and data turned on.
+
 Step Details: Start application, click on "Sign Up" and enter "testuser" as username and enter any password.
+
 Expected Results: App gives an error window informing user that user name is already taken
+
 Actual Results: As expected
 
 Test Case:015
+
 Test Scenario: User leaves a blank field once creating or entering user name or password
+
 Purpose: To test the prompt message telling the user to enter appropriate field
+
 Preconditions: Clean installation of the application, Wi-Fi and data turned on.
+
 Step Details: Start application and on log in leave either username or password blank
+
 Expected Results: Application will prompt the user to enter the right information in the appropriate fields.
+
 Actual Results: As expected
 
 
