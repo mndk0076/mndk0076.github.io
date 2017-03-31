@@ -3,7 +3,7 @@ csl: apa.csl
 bibliography: PLFCitations.bib
 ---
 
-###### Revision date: 24th, Mar 2017
+###### Revision date: 31st, Mar 2017
 
 Prototype Lab Flow Project
 ==========================
@@ -435,6 +435,16 @@ Congratulations! You've just implemented the full QR Code scanner program. We ho
 
 ### 3.1.8 Case Construction
 ---------------------------
+This section is completely optional, if you don't intend to package the webcam and raspberry pi together, feel free to omit this section.
+
+We started with a few rough sketches of the overall outline of the case, then later decided on building a sliding top. It’s a fairly simple design, yet it is a lot more interesting than slotted laser-cut acrylic cases. The slot for the ports is chamfered inwards for convenience. The slider top cover holds the webcam, which will be pointing to a focal point where a QR code can be placed for quicker scanning.
+
+Our design process consisted of brainstorming/outlining a rough sketch, followed by CAD model in AutoDesk Inventor, followed by the construction full scale foam model. 
+
+It is imperative that less extra space while measuring, marking, or cutting on the foam. This is because if you make a mistake (for example accidently chipping off an edge) you can sand it down and still have a perfectly usable piece.
+
+Here is what our final case looked like. The cream/greyish ones are the AutoDesk renditions of it while the brown snapshots are the pictures of the full-scale foam model. 
+
 #### Image 4: A collection of pictures showcasing the CAD model (cream) and the real-life model (brown) of the case from various angles
 ![Case](https://github.com/ssehra/ssehra.github.io/blob/master/case_collage.PNG)
 
