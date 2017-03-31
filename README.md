@@ -393,7 +393,8 @@ To test the PCB, run the traffic2B.c (source code available **-->** [here](https
 This should start blinking the L.E.D's in a traffic light pattern for an endless loop. Use **Ctrl+C** to exit the program. If this works, this means the PCB is ready to be used.
 
 #### Application and Database testing
-Test case:001
+
+#### Test case:001
 
 Test Scenario: Login test with good credentials
 
@@ -405,7 +406,7 @@ Expected Results: Accepts the user credentials and logs in with the test account
 
 Actual Results: As expected
 
-Test case:002
+#### Test case:002
 
 Test Scenario:Login test with bad credentials
 
@@ -419,7 +420,7 @@ Expected Results:The application will return a dialog box to the user, informing
 
 Actual Results: As expected
 
-Test case:003
+#### Test case:003
 
 Test Scenario: Checking in the remember me box, so that it remembers user and password info
 
@@ -433,7 +434,7 @@ Expected Results:User credentials should be remembered already and ready to user
 
 Actual Results: As expected
 
-Test Case:004
+#### Test Case:004
 
 Test Scenario: User does not check the “Remember me” box upon entering his credentials
 
@@ -447,7 +448,7 @@ Expected Results: Credentials should not be saved since checkbox was not checked
 
 Actual Results: As expected
 
-Test Case:005
+#### Test Case:005
 
 Test Scenario: Scanning QR code with “deny” on camera permission for scanner
 
@@ -461,7 +462,7 @@ Expected Results:Gives an error message back since it does not have permission t
 
 Actual Results: As expected
 
-Test Case:006
+#### Test Case:006
 
 Test Scenario: Scanning QR code with permission to use camera
 
@@ -475,7 +476,7 @@ Expected Results: Opens the camera and prompts user to display QR code to the ca
 
 Actual Results: As expected
 
-Test Case:007
+#### Test Case:007
 
 Test Scenario: User confirmation to exit the app
 
@@ -489,7 +490,7 @@ Expected Results: Should exit the application without any issues
 
 Actual Results: As expected
 
-Test Case:008
+#### Test Case:008
 
 Test Scenario: Clicking on exit and on “NO” on the prompt window
 
@@ -503,7 +504,7 @@ Expected Results: Should cancel the exit process and not exit the program.
 
 Actual Results: As expected
 
-Test Case:009
+#### Test Case:009
 
 Test Scenario: Scheduling date and time
 
@@ -517,7 +518,7 @@ Expected Results: A date and a time were selected therefore app schedules it and
 
 Actual Results: As expected
 
-Test Case:010
+#### Test Case:010
 
 Test Scenario: Check functionality of request item
 
@@ -531,7 +532,7 @@ Expected Results: Request Item tab should open allowing the user to select the a
 
 Actual Results: As expected
 
-Test Case:011
+#### Test Case:011
 
 Test Scenario: User clicks on “My account” on menu
 
@@ -545,7 +546,7 @@ Expected Results: Display student complete name, username and student number and
 
 Actual Results: As expected
 
-Test Case:012
+#### Test Case:012
 
 Test Scenario: User requests item and sets a date
 
@@ -557,7 +558,7 @@ Expected Results:User will be able to request the items and any amount of them r
 
 Actual Results: As Expected
 
-Test Case:013
+#### Test Case:013
 
 Test Scenario: User tries to scan a barcode with the QR scanner
 
@@ -571,7 +572,7 @@ Expected Results: Application is going to open the camera and try to scan the QR
 
 Actual Results: As expected
 
-Test Case:014
+#### Test Case:014
 
 Test Scenario: User tries to create account with user name that already exists
 
@@ -585,7 +586,7 @@ Expected Results: App gives an error window informing user that user name is alr
 
 Actual Results: As expected
 
-Test Case:015
+#### Test Case:015
 
 Test Scenario: User leaves a blank field once creating or entering user name or password
 
