@@ -656,6 +656,23 @@ Actual Results: As expected
 ### 3.4 Status Reports
 ------------------------
 
+| **TASK**                                 | **DUE DATE** |
+|------------------------------------------|--------------|
+| Writing Proposal                         | SEP 13, 2016 |
+| Project Schedule                         | SEP 20, 2016 |
+| Creating Budget                          | SEP 27, 2016 |
+| Acquiring Components & Progress Report   | OCT 4, 2016  |
+| Mechanical Assembly & Progress Report    | OCT 11, 2016 |
+| PCB Fabrication                          | OCT 18, 2016 |
+| Interface Wiring & Placard Design        | OCT 18, 2016 |
+| Preparing for Demonstration              | OCT 25, 2016 |
+| Demonstration,& Progress Report          | NOV 1, 2016  |
+| Build Video                              | NOV 8, 2016  |
+| Incorporating feedback & Progress Report | NOV 15, 2016 |
+| Practice Presentations                   | NOV 22, 2016 |
+| Individual Presentations                 | DEC 6, 2016  |
+| Project Video                            | DEC 13, 2016 |
+
 #### Status Update - Jan 20, 2017
 So far, for our hardware we have a webcam connected to Raspberry Pi that can scan QR codes and save them into a file in CSV format. We still have to find a way to add the contents of the CSV file to our database. Our web server is hosted on Hostinger, where we are currently able to store registered accounts, list of items borrowed by each student, and students’ preferred usage hours at the prototype lab. 
 
