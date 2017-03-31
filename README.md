@@ -434,7 +434,7 @@ Congratulations! You've just implemented the full QR Code scanner program. We ho
 ### 3.1.8 Case Construction
 ---------------------------
 ![Case](https://github.com/ssehra/ssehra.github.io/blob/master/case_collage.PNG)
-*Image 4: A collage showcasing different angles of the CAD model and the real-life model of the case*
+*Image 4: A collage showcasing the CAD model (cream) and the real-life model (brown) of the case from various angles*
 
 ### 3.2 Application Development
 -------------------------------
