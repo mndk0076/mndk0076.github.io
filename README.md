@@ -666,7 +666,7 @@ Actual Results: As expected
 | PCB Fabrication                          | OCT 18, 2016 |
 | Interface Wiring & Placard Design        | OCT 18, 2016 |
 | Preparing for Demonstration              | OCT 25, 2016 |
-| Demonstration,& Progress Report          | NOV 1, 2016  |
+| Demonstration & Progress Report          | NOV 1, 2016  |
 | Build Video                              | NOV 8, 2016  |
 | Incorporating feedback & Progress Report | NOV 15, 2016 |
 | Practice Presentations                   | NOV 22, 2016 |
