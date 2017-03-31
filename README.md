@@ -170,6 +170,7 @@ Table of Contents
 		- [3.1.5 Mechanical Assembly & Power Up](#315-mechanical-assembly--power-up)
 		- [3.1.6 Unit Testing](#316-unit-testing)
 		- [3.1.7 Scanning QR Codes](#317-scanning-qr-codes)
+		- [3.1.8 Case Construction](#318-case-construction)
 	+ [3.2 Application Development](#32-application-development)
 		- [3.2.1 Application and Database Testing](#321-application-and-database-testing)
 	+ [3.3 Administrator Website Development](#33-administrator-website-development)
@@ -326,7 +327,7 @@ Now that you have these files, you'll need eagle to open them. Eagle can be down
 | [HSHV4-student version.GTL](https://raw.githubusercontent.com/ssehra/ssehra.github.io/master/Build%20Log%20Files/HSHV4-student%20version.GTL) | [HSHV4-student version.GBL](https://raw.githubusercontent.com/ssehra/ssehra.github.io/master/Build%20Log%20Files/HSHV4-student%20version.GBL) | [HSHV4-student version.GTS](https://raw.githubusercontent.com/ssehra/ssehra.github.io/master/Build%20Log%20Files/HSHV4-student%20version.GTS) | [HSHV4-student version.GBS](https://raw.githubusercontent.com/ssehra/ssehra.github.io/master/Build%20Log%20Files/HSHV4-student%20version.GBS) | [HSHV4-student version.GTO](https://raw.githubusercontent.com/ssehra/ssehra.github.io/master/Build%20Log%20Files/HSHV4-student%20version.GTO) | [HSHV4-student version.GBO](https://raw.githubusercontent.com/ssehra/ssehra.github.io/master/Build%20Log%20Files/HSHV4-student%20version.GBO) | [HSHV4-student version.TXT](https://raw.githubusercontent.com/ssehra/ssehra.github.io/master/Build%20Log%20Files/HSHV4-student%20version.TXT) |
 
 #### Schematic for the PCB
-![Alt text](https://raw.githubusercontent.com/ssehra/ssehra.github.io/master/Build%20Log%20Files/Schematic.PNG)
+![Schematic](https://raw.githubusercontent.com/ssehra/ssehra.github.io/master/Build%20Log%20Files/Schematic.PNG)
 *Image 2: Technical Schematic of the PCB*
 
 These files are used to instruct the machine with the coordinates and to engrave the PCB. It takes about 4-5 hours for the machine to print it. After it's done, wash with water *(preferably deionized water)* and wipe it a piece of cloth to avoid leaving water marks (I recommend using a micro-fiber cloth) and wait for it to dry completely. After that's done you can sand the PCB a bit just to make it shinier. If you do sand it you have the repeat the washing process again.
@@ -429,6 +430,11 @@ More information about the flags and their usages can be found --> [here](http:/
 You should now have the program working. The program scans QR code and then blinks the L.E.D. as well showing the scanned item on the screen. After scanning an item it prompts to scan another. If you choose yes, it scans another item and prompts to scan more items. If you choose no, then the program exits and shows the list of items scanned during the session. According to our code, every session generates a new file with a timestamp. You can use one file and reuse if you want. Furthermore, you can press **Ctrl+C** anytime to exit the program.
 
 Congratulations! You've just implemented the full QR Code scanner program. We hope you were able to reproduce this project following these instructions.
+
+### 3.1.8 Case Construction
+---------------------------
+![Case](https://github.com/ssehra/ssehra.github.io/blob/master/case_collage.PNG)
+*Image 4: A collage showcasing different angles of the CAD model and the real-life model of the case*
 
 ### 3.2 Application Development
 -------------------------------
