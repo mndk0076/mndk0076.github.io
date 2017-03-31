@@ -682,6 +682,17 @@ Actual Results: As expected
 | Practice Presentations                   | NOV 22, 2016 |
 | Individual Presentations                 | DEC 6, 2016  |
 | Project Video                            | DEC 13, 2016 |
+| Proposal resubmission			   | JAN 20, 2017 |
+| Requirements Specifications		   | JAN 27, 2017 |
+| Status Report Email I			   | FEB 3, 2017  |
+| Technical Report Structure and Mechanics | FEB 10, 2017 |
+| Status Report Email II		   | FEB 24, 2017 |
+| Build Instructions 			   | FEB 3, 2017  |
+| Integretion Status Report Email 	   | MAR 10, 2017 |
+| Technical Report Checklist		   | MAR 17, 2017 |
+| Status Report Email III		   | MAR 24, 2017 |
+| Technical Report 			   | Mar 31, 2017 |
+
 
 #### Status Update - Jan 20, 2017
 So far, for our hardware we have a webcam connected to Raspberry Pi that can scan QR codes and save them into a file in CSV format. We still have to find a way to add the contents of the CSV file to our database. Our web server is hosted on Hostinger, where we are currently able to store registered accounts, list of items borrowed by each student, and students’ preferred usage hours at the prototype lab. 
