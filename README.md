@@ -181,8 +181,9 @@ Table of Contents
 List of Illustration/Diagrams
 -----------------------------
 + Image 1: System Diagram
-+ Image 2: Technical Schematic of the PCB
++ [Image 2: Technical Schematic of the PCB](#schematic-for-the-pcb)
 + Image 3: Completed PCB
++ Image 4: A collage of case from various angles
 
 # 1. Introduction
 
@@ -231,7 +232,8 @@ The UI is going to display a log in page as soon as it is opened. User will be a
 ### 3.1.1 System Diagram
 -------------------------
 The webcam will be used to scan ID barcodes and item QR codes to register the parts with students. The codes will then be processed by the raspberry pi. Once everything is processed the Pi will upload the info to the database which can then be accessed through a mobile app for a better visual experience.
-			
+		
+#### Image 1: System Diagram
 ![systemdiagram](https://gurpreetjhita.github.io/Build-Log/SystemDiagram.png)
 
 *Image 1: System Diagram shows how the different components work*
@@ -326,18 +328,18 @@ Now that you have these files, you'll need eagle to open them. Eagle can be down
 |---|---|---|---|---|---|---|
 | [HSHV4-student version.GTL](https://raw.githubusercontent.com/ssehra/ssehra.github.io/master/Build%20Log%20Files/HSHV4-student%20version.GTL) | [HSHV4-student version.GBL](https://raw.githubusercontent.com/ssehra/ssehra.github.io/master/Build%20Log%20Files/HSHV4-student%20version.GBL) | [HSHV4-student version.GTS](https://raw.githubusercontent.com/ssehra/ssehra.github.io/master/Build%20Log%20Files/HSHV4-student%20version.GTS) | [HSHV4-student version.GBS](https://raw.githubusercontent.com/ssehra/ssehra.github.io/master/Build%20Log%20Files/HSHV4-student%20version.GBS) | [HSHV4-student version.GTO](https://raw.githubusercontent.com/ssehra/ssehra.github.io/master/Build%20Log%20Files/HSHV4-student%20version.GTO) | [HSHV4-student version.GBO](https://raw.githubusercontent.com/ssehra/ssehra.github.io/master/Build%20Log%20Files/HSHV4-student%20version.GBO) | [HSHV4-student version.TXT](https://raw.githubusercontent.com/ssehra/ssehra.github.io/master/Build%20Log%20Files/HSHV4-student%20version.TXT) |
 
-#### Schematic for the PCB
+#### Image 2:Schematic for the PCB
 ![Schematic](https://raw.githubusercontent.com/ssehra/ssehra.github.io/master/Build%20Log%20Files/Schematic.PNG)
 *Image 2: Technical Schematic of the PCB*
 
 These files are used to instruct the machine with the coordinates and to engrave the PCB. It takes about 4-5 hours for the machine to print it. After it's done, wash with water *(preferably deionized water)* and wipe it a piece of cloth to avoid leaving water marks (I recommend using a micro-fiber cloth) and wait for it to dry completely. After that's done you can sand the PCB a bit just to make it shinier. If you do sand it you have the repeat the washing process again.
 
 Now the PCB is ready to be soldered. However, safety comes first. Make sure to wear safety glasses and dress appropriately for a lab/workplace environment. Now Use the schematic as the guide and solder each of the components to their respective places and making sure that the excess solder is not causing a short. Now inspect each soldering carefully again use a voltmeter to test for continuity. If all goes well you are ready to move on to the next chapter.
-		
+	
+#### Image 3: Completed PCB
 ![PCB](https://raw.githubusercontent.com/ssehra/ssehra.github.io/master/Build%20Log%20Files/PCB.png)
 
-*Image 3: Completed PCB*
-		
+
 ### 3.1.5 Mechanical Assembly & Power Up
 ----------------------------------------
 By now, you have acquired all the parts you are ready to start doing mechanical assembly. It's extremely easy from here onwards since this guide a shortchut to the finishline. 
@@ -433,8 +435,8 @@ Congratulations! You've just implemented the full QR Code scanner program. We ho
 
 ### 3.1.8 Case Construction
 ---------------------------
+#### Image 4: A collection of pictures showcasing the CAD model (cream) and the real-life model (brown) of the case from various angles
 ![Case](https://github.com/ssehra/ssehra.github.io/blob/master/case_collage.PNG)
-*Image 4: A collage showcasing the CAD model (cream) and the real-life model (brown) of the case from various angles*
 
 ### 3.2 Application Development
 -------------------------------
