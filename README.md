@@ -297,7 +297,7 @@ Before we start building something, we need to plan a budget. A budget will be e
 
 Let's start with the core of the project, a Raspberry Pi. The Raspberry Pi alone costs around $60-70 online if you're lucky enough find one. We highly recommend opting in for the Raspberry Pi starter kit instead as it comes with all the necessary items like a microSD card, an AC adapter and a case (as well as other stuff like a microSD reader). It's available for about $20-30 extra.
 
-A case is highly recommended as the raspberry pi is relatively fragile microcomputer. A microSD card is required to run the Raspbian OS on the pi. And of course, the AC adapter can be substituted with any microUSB phone/tablet charger.
+A case is highly recommended as the raspberry pi is relatively fragile microcomputer. A microSD card is required to run the Raspbian OS on the pi. And of course, the AC adapter can be substituted with any microUSB phone/tablet charger. Or you can follow this guide to construct your own case.
 
 Moving on, a webcam will be required to scan QR codes. Any USB webcam will do fine. So no need a spend the extra bucks for a high definition webcam. An average webcam will cost between $20 and $35. Or even cheaper if you find a used/refurbished one.
 
@@ -392,7 +392,80 @@ To test the PCB, run the traffic2B.c (source code available **-->** [here](https
 
 This should start blinking the L.E.D's in a traffic light pattern for an endless loop. Use **Ctrl+C** to exit the program. If this works, this means the PCB is ready to be used.
 
-#### Application and Database testing
+### 3.1.7 Scanning QR Codes
+---------------------------
+You can generate your own QR Codes ---> [here](http://www.qr-code-generator.com/), or any other website of your choosing. If you are using a service that allows you to set the pixel count of the QR code, we recommend setting it to the minimum as it's faster and can be handled by webcams with lower resolution. 
+
+#### Now we install the zbar library to scan QR codes. Follow these steps below:
+1. Type **sudo apt-get install zbar-tools** on the terminal
+2. Use **ls /dev/video*/** to find your video source
+3. Test by scanning a QR code by typing **zbarcam /dev/video#** on the terminal. (Note: the pound sign "#" is not literal value, it's supposed to represent the number that step 2 returns returns).
+
+Your webcam should now be working so go ahead and scan a QR code. You should now see the value of QR Code on the terminal saying preceded by the string "QR Code:". You can scan as many QR codes as you'd like. Use **Ctrl+C** to exit the program.
+
+The QR Code scanner has been implemented. 
+
+Nope. You're still not done yet. You need to add the capability to blink the L.E.D as well as save the results into a file for external use (ex: storing information into a database). Keep reading to find out how you add these.
+
+#### Run the following code to Scan QR Codes to implement the QR code scanner
+| Shell Script | Python Blink | greenLight.c |
+|---|---|---|
+|[scanqr.sh](https://raw.githubusercontent.com/ssehra/ssehra.github.io/master/Build%20Log%20Files/scanqr.sh)|[alertLight.py](https://raw.githubusercontent.com/ssehra/ssehra.github.io/master/Build%20Log%20Files/alertLight.py)|[greenLight.c](https://raw.githubusercontent.com/ssehra/ssehra.github.io/master/Build%20Log%20Files/greenLight.c)
+
+The python code is pretty simple it turns the the L.E.D on for 1/8th of a second and then turns it off for the same duration. This cycle is repeated 11 times to show the L.E.D feedback. 
+
+To change the 1/8th second on/off duration simply change the **time.sleep(0.125)** value to any number you like in the blink function. Lower values results in short durations and conversely higher values result in longer durations.
+```python
+def blink(pin):  
+        GPIO.output(pin,GPIO.HIGH)  
+        time.sleep(0.125)  
+        GPIO.output(pin,GPIO.LOW)  
+        time.sleep(0.125)  
+        return
+```
+
+Moreover, you can also change the number of cycles for how many times this led on/off will be repeated. Simply change the loop count by changing 11 to any value you desire.
+```python
+for i in range(0,11):
+```
+
+When it's all done you test run this program by typing **python alert.py** on the terminal. The L.E.D. should display according to your modifications. 
+
+The C file *greenLight.c* is just there to initiate the green light for use during the scanning process. It just blinks the led in green for 1/10th of the second. I recommend leaving it as is.
+
+The Shell Script file *scanqr.sh* is where the bulk of the program lies. It starts off by compiling and executing *greenLight.c*. Then it defines a few variables for storing information. Every session of script execution produces a file called "scan" followed by a timestamp and the .txt extension. You can change the output filename by editing the variable $ScanResult.
+```bash
+# Name of scan results file
+ScanResult="$cwd/scan_$DATE.txt"
+```
+
+The function *scan()* initiates zbarcam to scan QR codes and then kills the task after saving the output. It even asks the user to scan multiple entries. Since it's using zbarcam you apply modifications by using flags like *--prescale* to set the resolution of the scanning resolution. 
+```bash
+function scan() {
+  zbarcam --raw --prescale=320x240 /dev/video0 > $tmp &
+  ...
+  # Kill tasks, free up space and call test.py to blink L.E.D.
+  # Append scan results to file
+  # Show scan results
+  # Prompt to continue scanning
+}
+```
+More information about the flags and their usages can be found --> [here](http://manpages.ubuntu.com/manpages/xenial/man1/zbarcam.1.html).
+
+#### To run the final code follow these steps:
+1. Make sure all three core files: *greenLight.c*, *alertLight.py* and *scanqr.sh* are in the same directory.
+2. On the terminal, use **chmod 777** followed by the filenames and grant all Read-Write-Execute permissions to the core files.
+3. Type **./scanqr.sh** to execute the shell script.
+
+You should now have the program working. The program scans QR code and then blinks the L.E.D. as well showing the scanned item on the screen. After scanning an item it prompts to scan another. If you choose yes, it scans another item and prompts to scan more items. If you choose no, then the program exits and shows the list of items scanned during the session. According to our code, every session generates a new file with a timestamp. You can use one file and reuse if you want. Furthermore, you can press **Ctrl+C** anytime to exit the program.
+
+Congratulations! You've just implemented the full QR Code scanner program. We hope you were able to reproduce this project following these instructions.
+
+### 3.2 Application Development
+-------------------------------
+Since the application is the backbone of our project, we put a lot of effort into making it as clean and user friendly as possible. First we all sat together and started brainstorming how we wanted the UI to look like with drawings and from there we started developing our application. By having a general idea of how we wanted the UI to look, we could start programming the buttons and apply functionality to the activities. We have in total 8 activities in our application and they are: AboutUsActivity where it gives information about the developing team of the Prototype lab flow. The MainActivity is the activity presented to the user as soon as the application is opened. The MySingleton activity  where all the requests are queued. The ProfileActivity that shows the user their account info and also items and time slots booked. The RegisterAcitivity that handles user registration and allows him to create his account. The RequestItemActivity where the user will be displayed with the items information and amount and then be able to request it. The ScanQRActivity where the user will have to allow the prompt to give permission to the application to utilize his camera and then he will be able to scan QR codes. And our fine activity and one of the most important, the ScheduleActivity where the user will be able to request time slots and book them through it. Because we have been taught to program applications through android studio, and because it gives us more liberties and is easier to test on android phones, the application will only be available to android devices for now. In the beginning we were mainly testing it through the android studio emulators since we did not have an android device. But we have been utilizing Sukhdeep’s phone lately which can give us a better way of testing it, since it is a real device and we can actually have a better notion of how it looks and how the usability of it works. So far we have been pleased if our application and as developing continues, we will improve it each time more and more. This iteration of the application is so far bug free but it has not yet been put out for mass testing where we expect users to find some bugs since it has not yet been widely tested by many different users. With that in mind, as bugs appear we plan to solve then out and release updates to the application with the fixes.
+
+#### 3.2.1 Application and Database testing
 
 #### Test case:001
 
@@ -599,85 +672,6 @@ Step Details: Start application and on log in leave either username or password 
 Expected Results: Application will prompt the user to enter the right information in the appropriate fields.
 
 Actual Results: As expected
-
-
-
-
-
-
-
-### 3.1.7 Scanning QR Codes
----------------------------
-You can generate your own QR Codes ---> [here](http://www.qr-code-generator.com/), or any other website of your choosing. If you are using a service that allows you to set the pixel count of the QR code, we recommend setting it to the minimum as it's faster and can be handled by webcams with lower resolution. 
-
-#### Now we install the zbar library to scan QR codes. Follow these steps below:
-1. Type **sudo apt-get install zbar-tools** on the terminal
-2. Use **ls /dev/video*/** to find your video source
-3. Test by scanning a QR code by typing **zbarcam /dev/video#** on the terminal. (Note: the pound sign "#" is not literal value, it's supposed to represent the number that step 2 returns returns).
-
-Your webcam should now be working so go ahead and scan a QR code. You should now see the value of QR Code on the terminal saying preceded by the string "QR Code:". You can scan as many QR codes as you'd like. Use **Ctrl+C** to exit the program.
-
-The QR Code scanner has been implemented. 
-
-Nope. You're still not done yet. You need to add the capability to blink the L.E.D as well as save the results into a file for external use (ex: storing information into a database). Keep reading to find out how you add these.
-
-#### Run the following code to Scan QR Codes to implement the QR code scanner
-| Shell Script | Python Blink | greenLight.c |
-|---|---|---|
-|[scanqr.sh](https://raw.githubusercontent.com/ssehra/ssehra.github.io/master/Build%20Log%20Files/scanqr.sh)|[alertLight.py](https://raw.githubusercontent.com/ssehra/ssehra.github.io/master/Build%20Log%20Files/alertLight.py)|[greenLight.c](https://raw.githubusercontent.com/ssehra/ssehra.github.io/master/Build%20Log%20Files/greenLight.c)
-
-The python code is pretty simple it turns the the L.E.D on for 1/8th of a second and then turns it off for the same duration. This cycle is repeated 11 times to show the L.E.D feedback. 
-
-To change the 1/8th second on/off duration simply change the **time.sleep(0.125)** value to any number you like in the blink function. Lower values results in short durations and conversely higher values result in longer durations.
-```python
-def blink(pin):  
-        GPIO.output(pin,GPIO.HIGH)  
-        time.sleep(0.125)  
-        GPIO.output(pin,GPIO.LOW)  
-        time.sleep(0.125)  
-        return
-```
-
-Moreover, you can also change the number of cycles for how many times this led on/off will be repeated. Simply change the loop count by changing 11 to any value you desire.
-```python
-for i in range(0,11):
-```
-
-When it's all done you test run this program by typing **python alert.py** on the terminal. The L.E.D. should display according to your modifications. 
-
-The C file *greenLight.c* is just there to initiate the green light for use during the scanning process. It just blinks the led in green for 1/10th of the second. I recommend leaving it as is.
-
-The Shell Script file *scanqr.sh* is where the bulk of the program lies. It starts off by compiling and executing *greenLight.c*. Then it defines a few variables for storing information. Every session of script execution produces a file called "scan" followed by a timestamp and the .txt extension. You can change the output filename by editing the variable $ScanResult.
-```bash
-# Name of scan results file
-ScanResult="$cwd/scan_$DATE.txt"
-```
-
-The function *scan()* initiates zbarcam to scan QR codes and then kills the task after saving the output. It even asks the user to scan multiple entries. Since it's using zbarcam you apply modifications by using flags like *--prescale* to set the resolution of the scanning resolution. 
-```bash
-function scan() {
-  zbarcam --raw --prescale=320x240 /dev/video0 > $tmp &
-  ...
-  # Kill tasks, free up space and call test.py to blink L.E.D.
-  # Append scan results to file
-  # Show scan results
-  # Prompt to continue scanning
-}
-```
-More information about the flags and their usages can be found --> [here](http://manpages.ubuntu.com/manpages/xenial/man1/zbarcam.1.html).
-
-#### To run the final code follow these steps:
-1. Make sure all three core files: *greenLight.c*, *alertLight.py* and *scanqr.sh* are in the same directory.
-2. On the terminal, use **chmod 777** followed by the filenames and grant all Read-Write-Execute permissions to the core files.
-3. Type **./scanqr.sh** to execute the shell script.
-
-You should now have the program working. The program scans QR code and then blinks the L.E.D. as well showing the scanned item on the screen. After scanning an item it prompts to scan another. If you choose yes, it scans another item and prompts to scan more items. If you choose no, then the program exits and shows the list of items scanned during the session. According to our code, every session generates a new file with a timestamp. You can use one file and reuse if you want. Furthermore, you can press **Ctrl+C** anytime to exit the program.
-
-Congratulations! You've just implemented the full QR Code scanner program. We hope you were able to reproduce this project following these instructions.
-
-### 3.2 Application Development
--------------------------------
-Since the application is the backbone of our project, we put a lot of effort into making it as clean and user friendly as possible. First we all sat together and started brainstorming how we wanted the UI to look like with drawings and from there we started developing our application. By having a general idea of how we wanted the UI to look, we could start programming the buttons and apply functionality to the activities. We have in total 8 activities in our application and they are: AboutUsActivity where it gives information about the developing team of the Prototype lab flow. The MainActivity is the activity presented to the user as soon as the application is opened. The MySingleton activity  where all the requests are queued. The ProfileActivity that shows the user their account info and also items and time slots booked. The RegisterAcitivity that handles user registration and allows him to create his account. The RequestItemActivity where the user will be displayed with the items information and amount and then be able to request it. The ScanQRActivity where the user will have to allow the prompt to give permission to the application to utilize his camera and then he will be able to scan QR codes. And our fine activity and one of the most important, the ScheduleActivity where the user will be able to request time slots and book them through it. Because we have been taught to program applications through android studio, and because it gives us more liberties and is easier to test on android phones, the application will only be available to android devices for now. In the beginning we were mainly testing it through the android studio emulators since we did not have an android device. But we have been utilizing Sukhdeep’s phone lately which can give us a better way of testing it, since it is a real device and we can actually have a better notion of how it looks and how the usability of it works. So far we have been pleased if our application and as developing continues, we will improve it each time more and more. This iteration of the application is so far bug free but it has not yet been put out for mass testing where we expect users to find some bugs since it has not yet been widely tested by many different users. With that in mind, as bugs appear we plan to solve then out and release updates to the application with the fixes.
 
 ### 3.3 Administrator Website Development
 -----------------------------------------
