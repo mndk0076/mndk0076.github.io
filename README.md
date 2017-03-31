@@ -144,68 +144,37 @@ The purpose of the prototype lab flow project is to automate a system that is ou
 
 Table of Contents
 =================
-
 [Approved Proposal](#approved-proposal)
-
-   [Executive Summary](#executive-summary)
-
-   [Background](#background)
-
-   [Methodology](#methodology)
-
-   [Concluding Remarks](#concluding-remarks)
-
+[Executive Summary](#executive-summary)
+[Background](#background)
+[Methodology](#methodology)
+[Concluding Remarks](#concluding-remarks)
 [Illustration and Diagram](#illustration-and-diagram)
-
 1.  [Introduction](#1-introduction)
-    
-
 2.  [Software Requirements Specification](#2-software-requirements-specification)
-
-    + [2.1 Product Introduction](#21-product-introduction)
-
-       - [2.1.1 Purpose](#211-purpose)
-       
-       - [2.1.2 Scope](#212-scope)
-
-       - [2.1.3 Product Overview](#213-product-overview)
-       
-     + [2.2 Overall Description](#22-overall-description)
-
-       - [2.2.1 Database](#221-database)
-
-       - [2.2.2 Web Interface](#222-web-interface)
-
-       - [2.2.3 Hardware](#223-hardware)
-
-       - [2.2.4 Application](#224-application)
-
+	+ [2.1 Product Introduction](#21-product-introduction)
+		- [2.1.1 Purpose](#211-purpose)
+		- [2.1.2 Scope](#212-scope)
+		- [2.1.3 Product Overview](#213-product-overview)
+	+ [2.2 Overall Description](#22-overall-description)
+		- [2.2.1 Database](#221-database)
+		- [2.2.2 Web Interface](#222-web-interface)
+		- [2.2.3 Hardware](#223-hardware)
+		- [2.2.4 Application](#224-application)
 3.  [Build Instructions](#3-build-instructions)
-      
-    + [3.1 Hardware Production](#31-hardware-production)
-
-      - [3.1.1 System Diagram](#311-system-diagram)
-
-      - [3.1.2 Build Budget](#312-build-budget)
-
-      - [3.1.3 Time Commitment](#313-time-commitment)
-
-      - [3.1.4 PCB Soldering](#314-pcb-soldering)
-     
-      - [3.1.5 Mechanical Assembly & Power Up](#315-mechanical-assembly--power-up)
-      
-      - [3.1.6 Unit Testing](#316-unit-testing)
-      
-      - [3.1.7 Scanning QR Codes](#317-scanning-qr-codes)
-    
-    + [3.2 Application Development](#32-application-development)
-    
-    + [3.3 Administrator Website Development](#33-administrator-website-development)
-
+	+ [3.1 Hardware Production](#31-hardware-production)
+		- [3.1.1 System Diagram](#311-system-diagram)
+		- [3.1.2 Build Budget](#312-build-budget)
+		- [3.1.3 Time Commitment](#313-time-commitment)
+		- [3.1.4 PCB Soldering](#314-pcb-soldering)
+		- [3.1.5 Mechanical Assembly & Power Up](#315-mechanical-assembly--power-up)
+		- [3.1.6 Unit Testing](#316-unit-testing)
+		- [3.1.7 Scanning QR Codes](#317-scanning-qr-codes)
+	+ [3.2 Application Development](#32-application-development)
+		- [3.2.1 Application and Database Testing](321-application-and-database-testing)
+	+ [3.3 Administrator Website Development](#33-administrator-website-development)
 3.  [Conclusion](#3-conclusion)
-
 4.  [Recommendations](#4-recommendations)
-
 5.  [Bibliography](#5-bibliography)
 
 List of Illustration/Diagrams
