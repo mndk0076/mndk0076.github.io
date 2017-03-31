@@ -680,6 +680,35 @@ Congratulations! You've just implemented the full QR Code scanner program. We ho
 ### 3.3 Administrator Website Development
 -----------------------------------------
 
+### 3.4 Status Reports
+------------------------
+
+#### Status Update - Jan 20, 2017
+So far, for our hardware we have a webcam connected to Raspberry Pi that can scan QR codes and save them into a file in CSV format. We still have to find a way to add the contents of the CSV file to our database. Our web server is hosted on Hostinger, where we are currently able to store registered accounts, list of items borrowed by each student, and students’ preferred usage hours at the prototype lab. 
+
+Our software application, as of right now it consists of the following activities, a login page, a registration page, an account overview page, an item sign out activity, a time sign up activity, and a scan QR activity. Our next task is to add the list of days available for signing in as well as the list of available slots on each day. As well as a limit to number of times people can sign on for. 
+
+For financials, we've spent almost $200 on the project and it's projected a rise bit more as we will be designing a better case. We plan our progress through meetings we partake every week.
+
+#### Independent Progress - Feb 17, 2017
+We have so far begun implementing the different aspects illustrated in our technical report to our webpage and android application. So far our team has been very successful in finishing up all the tasks in time with our schedule. At the moment we have yet to implement some changes in our hardware but since our project is so heavily based on software we are not worried about the hardware and are sure it will be ready with the changes implemented in time with our schedule.
+
+So far Kenneth has developed the database for our application, which is going to be implemented into our webpage and application. We have decided to use a better solution to our database server called Firebase by Google. So far Kenneth’s progress has been on schedule.
+
+Since our last update on the hardware, Sukhdeep has been looking into better ways of implementing the hardware into our webpage application but we have only come up with the design and function and have yet to implement these changes, since last year we had completed most of the hardware build, implementing these changes involves just adding simple code to the hardware but without a proper functioning webpage we decided to complete that after the webpage was fully developed.
+
+Matheus has been working on the overall functionality of our Android application, since Kenneth is working on the database; Matheus is working on the flow of the Android app and testing the application in offline mode with dummy code to simulate a server connection, we are still also testing with our Hostinger we server but plan to change over to Firebase once it has been fully developed.
+
+As for me, Gurpreet, I have designed a website login page that is able to connect to Firebase and allow you to login using an email and password. At the moment you can also upload a small message to the server as an example to show in today’s class that we have the ability to upload data to the server.
+
+As of now our team is on schedule, we have not faced any financial changes at the moment but may have to once we begin on changing the hardware casing but so far we are beginning to see our vision come together slowly and progressively. For the week following the reading week we should have Firebase connected to both the webpage and Android app with most of the basic functionality operating, things such as statistics and extra functionality will be added once the core functions are working flawlessly. We meet up together weekly to discuss our progress so far and also stay in touch via Whatsapp.
+
+#### Integration Status Report
+This past week we have been working in the integration of the database and the application using hostinger for our database. We have managed to integrate both but now we need to figure out how to make the time restrictions required for the prototype lab time slots, such as the time available and the group that the student belongs to, and use it on the application. This way the user, instead of being able to pick any day and any time, restrictions will be applied to the application allowing the user only to pick the time slots available for their group and only when the prototype lab is open. The website was done using firebase as the database, but we are now going to change it to hostinger as well so it can be integrated to the application. The hardware so far, is where we are having most difficulties. We are currently generating a file with the QR code and now we are working on a way of connecting the QR information stored on the file to our database, therefore once the student scans his QR code his info is going to be stored in the database for the corresponding time slot requested.
+
+#### Troubleshooting Progress
+In our troubleshooting report we are going to say a few of the major problems we were having with our different components and how we solved it. For our application and database, we were having issues at first at our registration option, where the student could register but the info wasn’t getting stored properly in the database, therefore as soon as he signed out his account would be gone and he would have to create it all over again. And for testing we hard coded user accounts, items and time slots to the database to make sure it would all be displayed properly back to the user and if it would be applied also to the proper user in the database. For our hardware, at first when building the case, we were using too many layers of foam, which was not really being practical and it was not looking good either therefore we decided to use less foam to make it cleaner. Sukhdeep also tried in his first attempt at building the case, to keep it together with hot glue but it was melting the foam therefore he built it using wood glue. The case ended up adding $30 dollars to the budget to get the foam, glue and the other parts required to build it.
+
 # 4. Conclusion
 
 The prototype lab flow project is going to automate the school’s prototype lab system, making it easier and more appealing to students and staff. With the application allowing students to book time slots and items available in the prototype lab, there will be a higher usage of the lab and therefore more opportunities to students to develop their ideas. The hardware assists on the automation by scanning the students QR code generated by the application and storing it to our database, where the student info will be displayed with the time that the student check in or out. By doing so, we hope to bring a system more in line with the program we are studying and also a system that is much more appealing to students and staff to utilize the prototype lab more often and therefore stimulate all the students ideas by imposing less barriers to them. 
