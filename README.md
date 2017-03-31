@@ -171,7 +171,7 @@ Table of Contents
 		- [3.1.6 Unit Testing](#316-unit-testing)
 		- [3.1.7 Scanning QR Codes](#317-scanning-qr-codes)
 	+ [3.2 Application Development](#32-application-development)
-		- [3.2.1 Application and Database Testing](321-application-and-database-testing)
+		- [3.2.1 Application and Database Testing](#321-application-and-database-testing)
 	+ [3.3 Administrator Website Development](#33-administrator-website-development)
 3.  [Conclusion](#3-conclusion)
 4.  [Recommendations](#4-recommendations)
