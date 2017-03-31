@@ -180,10 +180,10 @@ Table of Contents
 
 List of Illustration/Diagrams
 -----------------------------
-+ Image 1: System Diagram
-+ [Image 2: Technical Schematic of the PCB](#schematic-for-the-pcb)
-+ Image 3: Completed PCB
-+ Image 4: A collage of case from various angles
++ [Image 1: System Diagram](#image-1-system-diagram)
++ [Image 2: Technical Schematic of the PCB](#image-2-schematic-for-the-pcb)
++ [Image 3: Completed PCB](#image-3-completed-pcb)
++ [Image 4: A collage of case from various angles](#image-4-a-collection-of-pictures-showcasing-the-cad-model-cream-and-the-real-life-model-brown-of-the-case-from-various-angles)
 
 # 1. Introduction
 
@@ -328,7 +328,7 @@ Now that you have these files, you'll need eagle to open them. Eagle can be down
 |---|---|---|---|---|---|---|
 | [HSHV4-student version.GTL](https://raw.githubusercontent.com/ssehra/ssehra.github.io/master/Build%20Log%20Files/HSHV4-student%20version.GTL) | [HSHV4-student version.GBL](https://raw.githubusercontent.com/ssehra/ssehra.github.io/master/Build%20Log%20Files/HSHV4-student%20version.GBL) | [HSHV4-student version.GTS](https://raw.githubusercontent.com/ssehra/ssehra.github.io/master/Build%20Log%20Files/HSHV4-student%20version.GTS) | [HSHV4-student version.GBS](https://raw.githubusercontent.com/ssehra/ssehra.github.io/master/Build%20Log%20Files/HSHV4-student%20version.GBS) | [HSHV4-student version.GTO](https://raw.githubusercontent.com/ssehra/ssehra.github.io/master/Build%20Log%20Files/HSHV4-student%20version.GTO) | [HSHV4-student version.GBO](https://raw.githubusercontent.com/ssehra/ssehra.github.io/master/Build%20Log%20Files/HSHV4-student%20version.GBO) | [HSHV4-student version.TXT](https://raw.githubusercontent.com/ssehra/ssehra.github.io/master/Build%20Log%20Files/HSHV4-student%20version.TXT) |
 
-#### Image 2:Schematic for the PCB
+#### Image 2: Schematic for the PCB
 ![Schematic](https://raw.githubusercontent.com/ssehra/ssehra.github.io/master/Build%20Log%20Files/Schematic.PNG)
 *Image 2: Technical Schematic of the PCB*
 
