@@ -12,7 +12,7 @@ Projects website: <https://mndk0076.github.io/>
 
 Declaration of Joint Authorship
 -------------------------------
-The work defined in this report is a joint collaboration project by Sukhdeep Sehra, Gurpreet Jhita, Matheus Almeida, and Kenneth Mendoza. The work specified is solely of our own creation and is expressed in our own words. We have clearly referenced all work with proper APA citatations with respect to the authors of the information. All work in this project is equally divided. Kenneth Mendoza was in charge of the development of the database, Sukhdeep Sehra was in charge of the design and construction of the hardware, Matheus Almeida worked on the overall layout and skeleton code of the mobile application and Gurpreet Jhita was in charge of designing and coding the admin website. Everyone has collaborated in all aspects of the deveplopent.
+The work defined in this report is a joint collaboration project by Sukhdeep Sehra, Gurpreet Jhita, Matheus Almeida, and Kenneth Mendoza. The work specified is solely of our own creation and is expressed in our own words. We have clearly referenced all work with proper APA catenations with respect to the authors of the information. All references to previously existing work have been appropriately cited throughout this document. All work in this project is equally divided, though each of us worked on all aspects of the project together we managed to still put focus on our own individual parts of this project, the divided work is as follows: Kenneth Mendoza was in charge of the development of the database, Sukhdeep Sehra was in charge of the design and construction of the hardware, Matheus Almeida worked on the overall layout and skeleton code of the mobile application and Gurpreet Jhita was in charge of designing and coding the admin website. Everyone has collaborated in all aspects of the development.
 
 Approved Proposal
 -----------------
@@ -204,7 +204,7 @@ In this project, we will create a mobile application which allows the students t
 
 ### 2.1.3 Product Overview
 --------------------------
-We will be using a Raspberry Pi 3, a digital camera and a monitor. These three components will make up the majority of our hardware that will be used to scan student QR codes. Our product will consist mostly of a software application and webpage synced to a database.
+We will be using a Raspberry Pi 3, a digital camera and a monitor. The Raspberry pi is going to be the central hub in charge of processing all the QR codes and barcodes presented to it via a HD webcam. All the content will be displayed to an HD monitor via HDMI cable. These three components will make up the majority of our hardware that will be used to scan student QR codes. Our product will consist mostly of a software application and webpage synced to a database.
 
 ### 2.1.4 Software Proposal
 ---------------------------
@@ -233,6 +233,10 @@ Our hardware will be a scanning device used to check-in to the prototype lab. Th
 Our application will allow the user to register and by doing so adding himself to our database. Once registered, the student will be able to access the other classes and request time slots and items from the prototype lab. He will also be able to see all the time slots available and the ones already taken, he will also be able to see if certain time period or day is reserved to certain group. Once an item or time is requested by student, it will be displayed on his account info. There will be two types of account in our application. The first will be the student account and the second will be an admin account. The admin will have access to all the classes in the app without any restriction and will be able to see what students have requested, when and the student’s information. One of the classes will be the statistics, where the admin will be able to see graphs with all the relevant information such as what are the times that are booked the most, by what group of students and the items that are requested the most. The admin will also be able to cancel a time reservation or item request from a student if necessary and update the student’s info page with the reasons why time or item reservation had to be cancelled or denied. Most of the classes will have access to the database, since it needs its information to display it back to the user and it will support English and French. Matheus and Kenneth will be in charge of the application.
 
 The UI is going to display a log in page as soon as it is opened. User will be able to then create his own account. Upon login, user will have a menu with the following options: My account where user will be able to find account info, such as requested items, schedule appointments in the lab, account information such as user name and etc. Request item, where he will be able to see and search for all the items and check if they are available, if so, he will be able to request them. Scan QR Codes, where the user will be able to scan a QR code present on the item and it is going to display extra information. About us, where the user will have a little bit of information about the development team of this application. Our main activity and focus of the application, Schedule, where the user will be able to select a date and time to book a time slot in the prototype lab and Log out, where user will Log out of his account.
+
+### 2.2.5 Performance
+---------------------
+Performance of our product is the most important aspect of our design. We want to ensure that with our product we set out to make a real difference to the Prototype Lab experience, so having bad performance of each aspect of our product would hinder the experience. We ensured to use all best quality software tools and hardware parts but also maintain within our project budget as illustrated in our project proposal. Performance of our database is also very critical, making sure we are connected to it at all times without a single hiccup will make the experience flawless and quick. Our mobile application and web application will be put through vigorous tests to make sure there are no bugs in the code and everything works flawlessly from page to page and activity to activity. The performance of the UI is also very crucial to our specific project, because we are trying to grasp the interest of students to use our method of booking timeslots rather than the old method, having a fluid UI and attractive UI is imperative.
 
 ## 3. Build Instructions
 
@@ -816,32 +820,102 @@ Actual Results: As expected
 
 ### 3.4 Tasks and Due Dates
 
-| **TASK**                                 | **DUE DATE** |
-|------------------------------------------|--------------|
-| Writing Proposal                         | SEP 13, 2016 |
-| Project Schedule                         | SEP 20, 2016 |
-| Creating Budget                          | SEP 27, 2016 |
-| Acquiring Components & Progress Report   | OCT 4, 2016  |
-| Mechanical Assembly & Progress Report    | OCT 11, 2016 |
-| PCB Fabrication                          | OCT 18, 2016 |
-| Interface Wiring & Placard Design        | OCT 18, 2016 |
-| Preparing for Demonstration              | OCT 25, 2016 |
-| Demonstration & Progress Report          | NOV 1, 2016  |
-| Build Video                              | NOV 8, 2016  |
-| Incorporating feedback & Progress Report | NOV 15, 2016 |
-| Practice Presentations                   | NOV 22, 2016 |
-| Individual Presentations                 | DEC 6, 2016  |
-| Project Video                            | DEC 13, 2016 |
-| Proposal resubmission			   | JAN 20, 2017 |
-| Requirements Specifications		   | JAN 27, 2017 |
-| Status Report Email I			   | FEB 3, 2017  |
-| Technical Report Structure and Mechanics | FEB 10, 2017 |
-| Status Report Email II		   | FEB 24, 2017 |
-| Build Instructions 			   | FEB 3, 2017  |
-| Integretion Status Report Email 	   | MAR 10, 2017 |
-| Technical Report Checklist		   | MAR 17, 2017 |
-| Status Report Email III		   | MAR 24, 2017 |
-| Technical Report 			   | Mar 31, 2017 |
+##### Writing Proposal SEP 13, 2016 
+
+The very first week of our hardware design class we wrote the proposal for our idea and it was submitted to the professor for reviewing and deciding whether we had the right approach to a great idea or if our idea clashed with another group and need to be modified.
+
+##### Project Schedule SEP 20, 2016 
+
+The project schedule was handed out and we were to review and implemented the different due dates into our project schedule in order to complete the hardware portion in the given time illustrated in the project schedule, it can be found in the build instructions of our hardware listed above.
+
+##### Creating Budget SEP 27, 2016 
+
+The budget list was created, our target was to stay within $200 but we managed to go over that proposed budget by an additional $100 due to having to change the camera for a higher quality one.
+
+##### Acquiring Components & Progress Report OCT 4, 2016 
+
+For our project we only required a small amount of parts. The main part to our project was the HD webcam and Raspberry Pi. All the parts for the Raspberry pi were ordered off of Amazon and the HD webcam was bought from Bestbuy. By this week we had to submit a progress report to our professor illustrating any changes to our budgets and an obsticales we have faced so far along the way.
+
+##### Mechanical Assembly & Progress Report OCT 11, 2016 
+
+The mechanical assembly of our project was completed this week. It was a very simple process involving putting together the Raspberry pi in its plastic casing and installing the OS onto it and simply connecting the webcam through the USB port and that’s it you were finished assembling. Another progress report was due explaining and problems, changes and budget changes.
+
+##### PCB Fabrication OCT 18, 2016 
+
+This week we finished fabricating the PCB which was provided by Humber from the prototype lab. The testing of the PCB was done right after the fabrication.
+
+##### Interface Wiring & Placard Design OCT 18, 2016
+
+Our project didn’t require much wiring of external parts but that PCB kit did come with a couple of sensor hats that we could use to test out the PCB and make sure all its functionalities were working properly. This week we were also designing out placard to be submitted and posted on our github website.
+
+##### Preparing for Demonstration OCT 25, 2016
+
+By this week most of our functionality was working but was still in the testing fase and needed to be complete for next week when we demonstrate the working functionality to the entire class.
+
+##### Demonstration & Progress Report NOV 1, 2016
+
+The demonstration was complete this week and was a complete success and another progress report was written.
+
+##### Build Video  NOV 8, 2016
+ 
+This week we had to submit our build video that shows the complete build of our project including a quick un-boxing of all the equipment.
+
+##### Incorporating feedback & Progress Report NOV 15, 2016
+
+This week we were given the opportunity to demo our project at the open house and receive feedback about things we can change and improve on.
+
+##### Practice Presentations NOV 22, 2016
+
+Next week the presentations of our complete progress thus far were due. We spent this week practicing and creating the PowerPoint slide show to present to the class as well as demo the hardware.
+
+##### Individual Presentations DEC 6, 2016 
+
+We presented our slideshows this week and demoed off the hardware functionality.
+
+##### Project Video DEC 13, 2016
+
+This week we completed the course with a final video recording involving each team member to individually present their hardware and its functionality.
+
+##### Proposal resubmission JAN 20, 2017
+
+After the holiday break we return back to class to integrate our software and hardware production classes in order to create our final project, the Prototype Lab Flow.
+
+##### Requirements Specifications JAN 27, 2017
+
+The technical report was constructed this week and we began to add information about the project and the steps taken to complete the entire project. All descriptions of the database, the web application and mobile application were to be illustrated into the requirements specifications.
+
+##### Status Report Email FEB 3, 2017
+
+A status report of our current standing on all things complete thus far to the technical report and the integration of the software and hardware.
+
+##### Technical Report Structure and Mechanics FEB 10, 2017
+
+More content to be added to the technical report were added this week including mechanics and functionality of all the different aspects of the project.
+
+##### Status Report Email II FEB 24, 2017
+
+This email was for the individual progress reports. Illustrating everyone in groups project on their individual aspects of the integration process.
+
+##### Build Instructions FEB 3, 2017
+
+This week the build instructions were to be added to that technical report body.
+
+##### Integretion Status Report Email MAR 10, 2017
+
+The status report is for the overall completion of the project. This report illustrates our completion of the integration of the hardware and software to the professor.
+
+##### Technical Report Checklist MAR 17, 2017
+
+This week we were to complete the OACETT basic requirement report checklist.
+
+##### Status Report Email III	MAR 24, 2017
+
+The final status report given so far reporting any troubleshooting issues that we may have faced in the testing processes of the hardware and software.
+
+##### Technical Report Mar 31, 2017
+
+This week this technical report is to be completed.
+
 
 ### 3.5 Status Report Emails
 ------------------------
