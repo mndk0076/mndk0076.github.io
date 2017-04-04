@@ -447,13 +447,20 @@ Congratulations! You've just implemented the full QR Code scanner program. We ho
 
 ### 3.1.8 Case Construction
 ---------------------------
-This section is completely optional, if you don't intend to package the webcam and raspberry pi together, feel free to omit this section.
+This part is completely optional, if you don't intend to package the webcam and raspberry pi together, feel free to omit this section.
 
-We started with a few rough sketches of the overall outline of the case, then later decided on building a sliding top. It’s a fairly simple design, yet it is a lot more interesting than slotted laser-cut acrylic cases. The slot for the ports is chamfered inwards for convenience. The slider top cover holds the webcam, which will be pointing to a focal point where a QR code can be placed for quicker scanning.
+Due to the delicate nature of this project, we decided to build a case to pack everything neatly together. In doing not only did we protect fragile Raspberry Pi, but we also added an area where the webcam's focal point will be fixated to, to ease the scanning process. 
 
-Our design process consisted of brainstorming/outlining a rough sketch, followed by CAD model in AutoDesk Inventor, followed by the construction full scale foam model. It is imperative that less extra space while measuring, marking, or cutting on the foam. This is because if you make a mistake (for example accidently chipping off an edge) you can sand it down and still have a perfectly usable piece.
+We chose to build the case out of high density insulation foam. The reason we chose foam is because it is fairly easy to work with and can cut or sanded down to one's liking. It is a quintessential material for modelling. That being said, it is an insulation foam, which means it traps heat and that can cause a problem for designing cases. The Raspberry Pi creates heat even under normal workload. This is exactly why tried left extra room for the foam surrounding the Raspberry Pi. The extra room is about one-eighth of an inch and that in conjunction with windows for accessing the ports creates enough airflow for the raspberry pi to keep functioning under constant workload. 
 
-Here is what our final case looked like. The cream/greyish ones are the AutoDesk renditions of it while the brown snapshots are the pictures of the full-scale foam model. 
+To begin all this, we started with a few rough sketches of the overall outline of the case, then later decided on building a sliding top. The sliding design is useful as it allows us to take the raspberry pi out when ever we want to, and it also acts as a divider for the two main parts, the webcam and the raspberry pi. It is indeed a fairly simple design, yet it is a lot more interesting than slotted laser-cut acrylic cases (more about this in recommendations section). The slot for the ports is chamfered inwards for convenience. The slider top cover holds the webcam, which points to a focal point where a QR code can be placed for quicker scanning.
+
+Our design process consisted of brainstorming and outlining a rough sketch, followed by CAD model in designed in AutoDesk Inventor 2017, followed by the construction full scale foam model. It is imperative that you should leave extra space while measuring, marking, or cutting on the foam. This is because if you make a mistake (for example, accidently chipping off an edge) you can very easily sand it down and still have a perfectly usable piece. It extremely useful to use this technique as it minimizes the number times that a piece has to be designed, essentially down to one.
+
+We used a variety of tools to make cuts, wood tools work fine be beware because working with foam can be just as messy (if not worse) as working with wood. Machines like a band saw can also be utilized to cut foam. Although we personally preferred using an electric "hot rod" tool. The case construction can tricky, however we managed to build it (and paint it) in about 30 hours. Since it is insulating foam, it is as easy as painting on paper. 
+
+Figure 4: depicts what our final case looked like. The cream/greyish ones are the AutoDesk renditions of the case while the brown snapshots are the pictures of the full-scale foam model we constructed.
+
 
 #### Image 4: A collection of pictures showcasing the CAD model (cream) and the real-life model (brown) of the case from various angles
 ![Case](https://github.com/ssehra/ssehra.github.io/blob/master/case_collage.PNG)
