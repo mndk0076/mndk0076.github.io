@@ -974,7 +974,7 @@ Matheus Almeida
 
 Team: Prototype LabFlow
 
-#### Troubleshooting Progress - March 24, 2017
+#### Troubleshooting Progress Status Report - March 24, 2017
 Dear Professor,
 
 In our troubleshooting report we are going to say a few of the major problems we were having with our different components and how we solved it. For our application and database, we were having issues at first at our registration option, where the student could register but the info wasn’t getting stored properly in the database, therefore as soon as he signed out his account would be gone and he would have to create it all over again. And for testing we hard coded user accounts, items and time slots to the database to make sure it would all be displayed properly back to the user and if it would be applied also to the proper user in the database. For our hardware, at first when building the case, we were using too many layers of foam, which was not really being practical and it was not looking good either therefore we decided to use less foam to make it cleaner. Sukhdeep also tried in his first attempt at building the case, to keep it together with hot glue but it was melting the foam therefore he built it using wood glue. The case ended up adding $30 dollars to the budget to get the foam, glue and the other parts required to build it.
@@ -982,6 +982,17 @@ In our troubleshooting report we are going to say a few of the major problems we
 Sincerely,
 
 Matheus Almeida
+
+Team: Prototype LabFlow
+
+#### Demonstration Status Report - April, 2017
+Dear Professor,
+
+On Tuesday we will be presenting our prototype lab flow project. The application is going to allow the student to register, and once registered, student info will be stored in the database. The application then is going to generate a QR code for the student registered with his student number. Student then will book a time slot where we have a preset of time slots for each day. There will be a limit of students allowed per slot and this limit is going to be set by the admin. Once the student has selected the time slot he will have to scan his QR code in our hardware webcam. The hardware then is going to check the database for the student’s entry by checking the student’s student number. If the entry is there, student will be granted access otherwise access will be denied since he has not yet booked a time slot. On our website the admin will be able to check all the time slots that have been booked on each day and which student has booked it. 
+
+Sincerely,
+
+Kenneth Mendoza
 
 Team: Prototype LabFlow
 
